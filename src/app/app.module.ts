@@ -22,7 +22,7 @@ import { SharedModule } from './pages/shared/shared.module';
     AppRoutingModule, 
     HttpClientModule,
     AppRoutingModule,
-    SharedModule
+
     
     
   ],
