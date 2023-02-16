@@ -25,10 +25,6 @@ import { SharedRoutingModule } from './shared-routing.module';
     ProductsComponent,
     ProductComponent,
     NotfoundComponent
-
-   
-   
-   
    
   ]
 })
