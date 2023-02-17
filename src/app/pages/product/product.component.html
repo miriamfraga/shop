@@ -1,1 +1,12 @@
-<p>product works!</p>
+<div>
+    <h1>PRODUCT LIST</h1>
+    <ul>
+        <li *ngFor="let bonsai of arrayPlants.info">
+            <img src="{{bonsai.image}}" alt="{{bonsai.name}}">
+            <h1>{{bonsai.name}}: </h1><h2>{{bonsai.description}}</h2>
+            <p>{{bonsai.price}}</p>
+            <h3>{{bonsai.stars}}</h3>  
+            <!-- <button routerLink="/Products/"{{product.id}}>EDITE</button> -->
+    </ul>
+</div>
+
