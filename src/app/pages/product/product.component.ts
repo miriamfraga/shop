@@ -17,7 +17,7 @@ export class ProductComponent {
        music: "Soul/Jazz",
        price: 39,
        image: {
-          src: "../assets/kokedama.jpeg",
+          src: "./assets/kokedama.jpeg",
           alt: "kokedama"
        }
     },
@@ -42,7 +42,7 @@ export class ProductComponent {
           src: "./assets/carmona.avif",
           alt: "carmona"
        }
-      },
+      }
     ]
     }
 }
