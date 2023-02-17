@@ -16,11 +16,10 @@ export class ProductComponent {
        cares: "Estancia luminosa, sol indirecto, evitar fuentes de aire directas, requiere poca agua",
        music: "Soul/Jazz",
        price: 39,
-       image: [{
-          src: "./assets/kokedama.jpeg",
+       image: {
+          src: "../assets/kokedama.jpeg",
           alt: "kokedama"
-       }]
-             
+       }
     },
       {
         name: "Juniperus",
@@ -28,11 +27,10 @@ export class ProductComponent {
         cares: "Exterior, sitio muy luminoso, abono orgánico, pinzar brotes largos para desarrollar nubes de follaje",
         music: "Dodecaphonic",
         price: 49.99,
-        image: [{
+        image: {
           src: "./assets/junipero.webp",
           alt: "juniperus"
-       }]
-      
+       }
     },
       {
         name: "Carmona Microphylla",
@@ -40,14 +38,11 @@ export class ProductComponent {
         cares: "Interior, temperaturas bajas, iluminación natural, regar con abundancia",
         music: "Classic",
         price: 39.99,
-        image: [{
+        image: {
           src: "./assets/carmona.avif",
           alt: "carmona"
-       }]
-        
+       }
       },
     ]
-
     }
-  
 }

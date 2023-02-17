@@ -2,11 +2,11 @@
     <h1>PRODUCT LIST</h1>
     <ul>
         <li *ngFor="let bonsai of arrayPlants.info">
-            <img src="{{bonsai.image}}" alt="{{bonsai.name}}">
+            <img [src]="bonsai.image.src" [alt]="bonsai.image.alt">
             <h1>{{bonsai.name}}: </h1><h2>{{bonsai.description}}</h2>
             <p>{{bonsai.price}}</p>
-            <h3>{{bonsai.stars}}</h3>  
-            <!-- <button routerLink="/Products/"{{product.id}}>EDITE</button> -->
+            <!-- <h3>{{bonsai.stars}}</h3>   -->
+            <!-- <button routerLink="/Products/"{{product.id}}>EDIT</button> -->
     </ul>
 </div>
 
