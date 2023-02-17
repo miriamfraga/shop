@@ -1,0 +1,30 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #333333;
+    p {
+        align-self: center;
+        color: white;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        gap: 10px;
+        li {
+            color: white;
+            &:hover {
+                font-weight: bold;
+            }
+            &:not(:last-child)::after {
+                content: " | ";
+                color: white;
+            }
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+        
+        }
+    }
