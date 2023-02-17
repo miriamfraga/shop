@@ -11,7 +11,7 @@ const routes: Routes = [
   
   
      {path: "home", component: HomeComponent},
-  //  {path: "", component: ProductsComponent},
+  //  {path: "Products", component: ProductsComponent},
   //  {path: "Manage", component: ManageComponent},
    {path: "**", component: NotfoundComponent, pathMatch: 'full' },
 
