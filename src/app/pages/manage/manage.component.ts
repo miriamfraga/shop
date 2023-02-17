@@ -46,10 +46,11 @@ export class ManageComponent {
         name: this.productRegistrationForm.get('name')?.value,
         price: this.productRegistrationForm.get('price')?.value,
         category: this.productRegistrationForm.get('category')?.value,
+        cares: this.productRegistrationForm.get('cares')?.value,
+        music: this.productRegistrationForm.get('music')?.value,
         description: this.productRegistrationForm.get('description')?.value,
         image: this.productRegistrationForm.get('image')?.value,
         reviews: this.productRegistrationForm.get('reviews')?.value
-      }
     }
    }
 }
