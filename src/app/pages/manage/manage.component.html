@@ -1,1 +1,39 @@
-<p>manage works!</p>
+<h2>Formulario de registración del producto</h2>
+
+<form novalidate (ngSubmit)="onSubmit()" [formGroup]="productRegistrationForm"]>
+    <fieldset>
+        <label for="">Nombre del producto:</label>
+        <input type="text" id="name"> formControlName="name">
+    </fieldset>
+    <fieldset>
+        <label for="">Precio:</label>
+        <input type="number" id="price"> formControlName="price">
+    </fieldset>
+    <fieldset>
+        <label for="">Categoría:</label>
+        <input type="radio" id="category"> formControlName="category">
+    </fieldset>
+    <fieldset>
+        <label for="">Cuidado:</label>
+        <input type="number" id="reviews"> formControlName="reviews">
+    </fieldset>
+    <fieldset>
+        <label for="">Música:</label>
+        <input type="" id="reviews"> formControlName="reviews">
+    </fieldset>
+    <fieldset>
+        <label for="">Descripción:</label>
+        <input type="text" id="description"> formControlName="description">
+    </fieldset>
+    <fieldset>
+        <label for="">Imagen:</label>
+        <input type="text" id="image"> formControlName="image">
+    </fieldset>
+    <fieldset>
+        <label for="">Opiniones:</label>
+        <input type="number" id="reviews"> formControlName="reviews">
+    </fieldset>
+    
+
+    <button type="submit" [disabled]="!productRegistrationForm.valid">ENVIAR</button>
+</form>
