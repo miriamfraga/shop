@@ -4,7 +4,10 @@
         <li *ngFor="let bonsai of arrayPlants.info">
             <img [src]="bonsai.image.src" [alt]="bonsai.image.alt">
             <h1>{{bonsai.name}}: </h1><h2>{{bonsai.description}}</h2>
+            <h3>{{bonsai.music}}</h3>
+            <p>{{bonsai.cares}}</p>
             <p>{{bonsai.price}}</p>
+
             <!-- <h3>{{bonsai.stars}}</h3>   -->
             <!-- <button routerLink="/Products/"{{product.id}}>EDIT</button> -->
     </ul>
