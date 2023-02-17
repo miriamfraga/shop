@@ -29,6 +29,7 @@ footer {
                 }
                 &:not(:last-child)::after {
                     content: " | ";
+                    margin: 20px;
                     color: white;
                 }
                 a {
