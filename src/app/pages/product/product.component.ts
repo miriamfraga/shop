@@ -15,7 +15,7 @@ export class ProductComponent {
        description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aéreas hacen que quede perfecto con la kokedama",
        cares: "Estancia luminosa, sol indirecto, evitar fuentes de aire directas, requiere poca agua",
        music: "Soul/Jazz",
-       price: 39,
+       price: 39.99,
        image: {
           src: "./assets/kokedama.jpeg",
           alt: "kokedama"
@@ -40,9 +40,42 @@ export class ProductComponent {
         price: 39.99,
         image: {
           src: "./assets/carmona.avif",
-          alt: "carmona"
+          alt: "Carmona"
        }
-      }
+      },
+      {
+        name: "Kotate Mochi",
+        description:"Tamañano entre 15 y 30 cm. Sencillo de mantener. Estilo bosque frondoso.",
+        cares: "Espacios abiertos y luminosos, poca agua. Evitar temperaturas extremas.",
+        music: "Gregorian",
+        price: 29.99,
+        image: {
+          src: "./assets/kotate.jpeg",
+          alt: "Kotate Mochi"
+       }
+    },
+    {
+      name: "Kotate Mochi",
+      description:"Tamañano entre 15 y 30 cm. Sencillo de mantener. Estilo bosque frondoso",
+      cares: "Espacios abiertos y luminosos, poca agua. Evitar temperaturas extremas.",
+      music: "Gregorian",
+      price: 29.99,
+      image: {
+        src: "./assets/kotate.jpeg",
+        alt: "Kotate Mochi"
+     }
+  },
+  {
+    name: "Kotate Mochi",
+    description:"Tamañano entre 15 y 30 cm. Sencillo de mantener. Estilo bosque frondoso",
+    cares: "Espacios abiertos y luminosos, poca agua. Evitar temperaturas extremas.",
+    music: "Gregorian",
+    price: 29.99,
+    image: {
+      src: "./assets/kotate.jpeg",
+      alt: "Kotate Mochi"
+   }
+},
     ]
     }
 }
