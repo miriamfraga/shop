@@ -6,7 +6,6 @@ import { HomeComponent } from './../home/home.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedRoutingModule } from './shared-routing.module';
-import { ChildProductsComponent } from '../products/child-products/child-products.component';
 
 @NgModule({
   declarations: [
@@ -14,12 +13,10 @@ import { ChildProductsComponent } from '../products/child-products/child-product
     ProductsComponent,
     ProductComponent,
     NotfoundComponent,
-   ChildProductsComponent
   ],
   imports: [
     CommonModule,
     SharedRoutingModule,
-    
    
   
   ],
