@@ -1,4 +1,3 @@
-import { ManageComponent } from './pages/manage/manage.component';
 import { ManageModule } from './pages/manage/manage.module';
 import { SharedModule } from './pages/shared/shared.module';
 
@@ -22,7 +21,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     MainComponent,
     FooterComponent,
-    ManageComponent
   ],
   imports: [
     BrowserModule,
