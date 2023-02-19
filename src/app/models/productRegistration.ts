@@ -4,7 +4,9 @@ export interface ProductRegistration {
     price: number;
     category: string[];
     care: string;
-    music: string[];
+    // music: string[];
+     music: string;
+    
     description: string;
     image: string;
     rating: number;

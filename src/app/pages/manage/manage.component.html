@@ -10,21 +10,20 @@
         <input type="number" id="price" formControlName="priceForm">
     </fieldset>
     <fieldset>
-        <label for="category">Category:</label>
-        <select name="category" id="category" formControlName="categoryForm">
-            <option *ngFor="let categ of category" [value]="categ">{{categ}}</option>
+        <label for="music">Music:</label>
+        <select name="music" id="music" formControlName="musicForm">
+            <option *ngFor="let categ of music" [value]="categ">{{categ}}</option>
           </select>
     </fieldset>
     <fieldset>
         <label for="care">Care:</label>
         <textarea id="care" rows="3" formControlName="careForm">
     </fieldset>
-    <fieldset>
-        <label for="music">Music:</label>
-        <select name="music" id="music" formControlName="musicForm">
-            <option *ngFor="let type of music" [value]="type">{{type}}</option>
-        </select>
-    </fieldset>
+
+   
+   
+   
+   
     <fieldset>
         <label for="description">Description:</label>
         <textarea id="description" rows="3" formControlName="description">Add a short description</textarea>
