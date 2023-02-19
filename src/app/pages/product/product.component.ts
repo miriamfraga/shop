@@ -1,3 +1,4 @@
+import { ProductService } from './../../service/product.service';
 import { Component } from '@angular/core';
 import { Iarray } from 'src/app/models/interface';
 
@@ -7,6 +8,13 @@ import { Iarray } from 'src/app/models/interface';
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent {
+     bonsaisList: Iarray[] = [];
+     filteredBonsais: Iarray[] = [];
+     filter: string = ''
+     constructor (private productServive:ProductService) {
+           this.filteredBonsais = this.bonsaisList;
+     }
+     
     public arrayPlants: Iarray = {
       category: "plants",
       info: [
@@ -78,4 +86,11 @@ export class ProductComponent {
 },
     ]
     }
+
+    onFilterProduct(filter: any){
+      const bonsai: any = this.bonsaisList.filter(pr => pr.info.includes(filter.toLowerCase()));
+      this.filteredBonsais = bonsai;
+    }
+  
+  
 }

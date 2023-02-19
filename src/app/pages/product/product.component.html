@@ -1,5 +1,9 @@
 <div class="wrap">
     <!-- <h1>OUR FAVOURITE BONSAIS</h1> -->
+    <!-- <div> -->
+        <!-- <h3 *ngFor="let bonsai of (bonsaisList | pipe: filter)">{{bonsai}}</h3> -->
+        <!-- <input type="text" [(ngModel)]="filter"> -->
+    <!-- </div> -->
     <ul class="div__ul">
         <li *ngFor="let bonsai of arrayPlants.info" class="div__ul__li">
             <img [src]="bonsai.image.src" [alt]="bonsai.image.alt" class="li__img">
