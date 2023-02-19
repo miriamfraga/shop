@@ -1,16 +1,16 @@
 
-<div>
-    <h1>PRODUCT LIST</h1>
-    <ul>
-        <li *ngFor="let product of productList">
-            <img [src]="product.image" alt="{{product.name}}">
-            <h1>{{product.name}}: </h1><h2>{{product.description}}</h2>
-            <p>{{product.price}}</p>
-            <h3>{{product.star}}</h3>  
+
+<app-child-products [productList]="productList"></app-child-products>
+<!-- <div class="wrap"> -->
+    <!-- <h1>PRODUCT LIST</h1> -->
+    <!-- <ul class="div__ul"> -->
+        <!-- <li *ngFor="let product of productList" class="div__ul__li"> -->
+            <!-- <img [src]="product.image" alt="{{product.name}}" class="li__img"> -->
+            <!-- <h3>{{product.name}}:</h3> -->
+            <!-- <h4>{{product.description}}</h4> -->
+            <!-- <h3>{{product.price}}</h3> -->
+            <!-- <h3>{{product.star}}</h3>   -->
             <!-- <button routerLink="/Products/"{{product.id}}>EDITE</button> -->
-    </ul>
-</div>
-
-
-
+    <!-- </ul> -->
+<!-- </div> -->
 

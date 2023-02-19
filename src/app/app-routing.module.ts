@@ -1,3 +1,4 @@
+import { ProductComponent } from './pages/product/product.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { ManageComponent } from './pages/manage/manage.component';
 import { NgModule } from '@angular/core';
@@ -12,6 +13,7 @@ const routes: Routes = [
   
      {path: "home", component: HomeComponent},
   //  {path: "Products", component: ProductsComponent},
+      {path: "Product", component: ProductComponent},
   //  {path: "Manage", component: ManageComponent},
    {path: "**", component: NotfoundComponent, pathMatch: 'full' },
 

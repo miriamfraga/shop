@@ -1,6 +1,6 @@
 *{
     margin: 0 auto;
-    // width: 90%
+    //  width: 90%
     
 }
 .div__wrapper{
@@ -11,7 +11,6 @@
 .div__header{
     display:flex;
     flex-direction: column;
-
     align-items: center;
 }
 .title__header{
@@ -19,8 +18,12 @@
 }
 .div__nav{
     display:flex;
-    background-color: rgb(246, 200, 91);
-    width:100%;  
+    // background-color: rgb(246, 200, 91);
+    background-image:url("https://media.giphy.com/media/zI07ZEPDsuhdBsyc9t/giphy.gif");
+    background-repeat: repeat;
+    background-position: center;
+     width:100%; 
+    min-height: 10%;
     padding: 1%;
     flex-direction: row;
 
@@ -34,7 +37,7 @@ img{
     width: 10%;
 }
 button{
-     background-color: transparent;
+    background-color: transparent;
     border-radius:2em;
     margin: 2%;
     padding:0.3em 1.2em;

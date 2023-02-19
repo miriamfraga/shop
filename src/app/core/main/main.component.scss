@@ -1,0 +1,16 @@
+*{
+    margin: 0 auto;
+    max-width: 90%;
+    text-align: center;
+}
+.section__wrap{
+    padding: 1em;
+    display: flex;
+    gap: 1em;
+    width: calc(25% - 1em);
+    flex-direction: row;
+    justify-content: center;
+}
+.section__img{
+   max-width: 60%;
+}

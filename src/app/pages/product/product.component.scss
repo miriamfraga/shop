@@ -1,0 +1,28 @@
+*{
+    margin: 0 auto; 
+
+}
+.wrap{
+    display: flex;
+    flex-direction: row;
+  
+    .div__ul{
+        display:flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        width: calc(30% - 1em);
+        text-align: center;
+        padding-inline-start: 0;
+    }
+    .div__ul__li{
+         max-width: 100%;
+        list-style: none;
+        margin-top: 2%;
+        justify-content: flex-end;
+        
+    }
+    .li__img{
+    
+          max-width: 100%;
+    }
+}
