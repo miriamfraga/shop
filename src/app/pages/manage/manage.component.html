@@ -1,28 +1,28 @@
 <h2>Add product:</h2>
 
-<form novalidate (ngSubmit)="onSubmit()" [formGroup]="productRegistrationForm"]>
+<form novalidate (ngSubmit)="onSubmit()" [formGroup]="productRegistrationForm">
     <fieldset>
         <label for="name">Product name:</label>
-        <input type="text" id="name" formControlName="name">
+        <input type="text" id="name" formControlName="nameForm">
     </fieldset>
     <fieldset>
         <label for="price">Price:</label>
-        <input type="number" id="price" formControlName="price">
+        <input type="number" id="price" formControlName="priceForm">
     </fieldset>
     <fieldset>
         <label for="category">Category:</label>
-        <select name="category" id="category">
+        <select name="category" id="category" formControlName="categoryForm">
             <option *ngFor="let categ of category" [value]="categ">{{categ}}</option>
           </select>
     </fieldset>
     <fieldset>
         <label for="care">Care:</label>
-        <textarea id="care" rows="3" formControlName="care">
+        <textarea id="care" rows="3" formControlName="careForm">
     </fieldset>
     <fieldset>
         <label for="music">Music:</label>
-        <select name="music" id="music">
-            <option *ngFor="let muse of music" [value]="muse">{{music}}</option>
+        <select name="music" id="music" formControlName="musicForm">
+            <option *ngFor="let type of music" [value]="type">{{type}}</option>
         </select>
     </fieldset>
     <fieldset>
@@ -31,11 +31,11 @@
     </fieldset>
     <fieldset>
         <label for="image">Image:</label>
-        <input type="text" id="image" formControlName="image">
+        <input type="text" id="image" formControlName="imageForm">
     </fieldset>
     <fieldset>
         <label for="rating">Rating:</label>
-        <input type="number" id="rating" formControlName="rating">
+        <input type="number" id="rating" formControlName="ratingForm">
     </fieldset>
     
 
