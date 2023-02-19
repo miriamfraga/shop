@@ -103,9 +103,13 @@
   },
   "cli": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "analytics": "f2a305fb-0cbe-4c8d-8e71-def2d43edbcc"
 =======
     "analytics": "5fa39db1-41a2-49f8-bffa-30c3ccc2e99e"
 >>>>>>> b0fa96a (cli)
+=======
+    "analytics": "2ea64b2c-de21-4550-8d36-f9063ce818bb"
+>>>>>>> form
   }
 }

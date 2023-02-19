@@ -1,6 +1,7 @@
-import { NotfoundComponent } from './../notfound/notfound.component';
+import { HomeModule } from './../home/home.module';
 import { ProductComponent } from './../product/product.component';
-import { ProductsComponent } from './../products/products.component';
+import { NotfoundComponent } from './../notfound/notfound.component';
+import { ManageComponent } from './../manage/manage.component';
 import { HomeComponent } from './../home/home.component';
 
 import { NgModule } from '@angular/core';
@@ -14,8 +15,7 @@ import { ChildProductsComponent } from '../products/child-products/child-product
 @NgModule({
   declarations: [
     HomeComponent,
-    ProductsComponent,
-    ProductComponent,
+    ManageComponent,
     NotfoundComponent,
     PipePipe,
     ChildProductsComponent

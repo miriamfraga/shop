@@ -1,1 +1,42 @@
-<p>manage works!</p>
+<h2>Add product:</h2>
+
+<form novalidate (ngSubmit)="onSubmit()" [formGroup]="productRegistrationForm">
+    <fieldset>
+        <label for="name">Product name:</label>
+        <input type="text" id="name" formControlName="nameForm">
+    </fieldset>
+    <fieldset>
+        <label for="price">Price:</label>
+        <input type="number" id="price" formControlName="priceForm">
+    </fieldset>
+    <fieldset>
+        <label for="music">Music:</label>
+        <select name="music" id="music" formControlName="musicForm">
+            <option *ngFor="let categ of music" [value]="categ">{{categ}}</option>
+          </select>
+    </fieldset>
+    <fieldset>
+        <label for="care">Care:</label>
+        <textarea id="care" rows="3" formControlName="careForm">
+    </fieldset>
+
+   
+   
+   
+   
+    <fieldset>
+        <label for="description">Description:</label>
+        <textarea id="description" rows="3" formControlName="description">Add a short description</textarea>
+    </fieldset>
+    <fieldset>
+        <label for="image">Image:</label>
+        <input type="text" id="image" formControlName="imageForm">
+    </fieldset>
+    <fieldset>
+        <label for="rating">Rating:</label>
+        <input type="number" id="rating" formControlName="ratingForm">
+    </fieldset>
+    
+
+    <button type="submit" [disabled]="!productRegistrationForm.valid">Submit</button>
+</form>
