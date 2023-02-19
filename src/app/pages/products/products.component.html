@@ -1,16 +1,13 @@
-
+<h2>Illustration Section</h2>
+<div class="wrap">
+  
+    <ul class="div__ul">
+        <li *ngFor="let illustration of topProducts.info" class="div__ul__li">
+            <img [src]="illustration.image.src" [alt]="illustration.image.alt" class="li__img">
+            <h1>{{illustration.name}}: </h1><h2>{{illustration.description}}</h2>
+            <p>{{illustration.price}}</p>   
+    </ul>
+</div>
 
 <app-child-products [productList]="productList"></app-child-products>
-<!-- <div class="wrap"> -->
-    <!-- <h1>PRODUCT LIST</h1> -->
-    <!-- <ul class="div__ul"> -->
-        <!-- <li *ngFor="let product of productList" class="div__ul__li"> -->
-            <!-- <img [src]="product.image" alt="{{product.name}}" class="li__img"> -->
-            <!-- <h3>{{product.name}}:</h3> -->
-            <!-- <h4>{{product.description}}</h4> -->
-            <!-- <h3>{{product.price}}</h3> -->
-            <!-- <h3>{{product.star}}</h3>   -->
-            <!-- <button routerLink="/Products/"{{product.id}}>EDITE</button> -->
-    <!-- </ul> -->
-<!-- </div> -->
 

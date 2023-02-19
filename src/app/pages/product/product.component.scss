@@ -4,25 +4,26 @@
 }
 .wrap{
     display: flex;
-    flex-direction: row;
+    // flex-direction: row;
   
     .div__ul{
-        display:flex;
-        flex-wrap: wrap;
+      
+        padding: 1em;
+        display: flex;
         gap: 1em;
-        width: calc(30% - 1em);
-        text-align: center;
-        padding-inline-start: 0;
+        width: calc(25% - 1em);
+        flex-direction: row;
+        justify-content: center;          
     }
     .div__ul__li{
          max-width: 100%;
         list-style: none;
-        margin-top: 2%;
-        justify-content: flex-end;
+        // margin-top: 2%;
+        // justify-content: flex-end;
         
     }
     .li__img{
     
-          max-width: 100%;
+        //   max-width: 100%;
     }
 }
