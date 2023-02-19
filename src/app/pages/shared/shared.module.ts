@@ -6,7 +6,10 @@ import { HomeComponent } from './../home/home.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedRoutingModule } from './shared-routing.module';
+
+import { PipePipe } from 'src/app/pipe/pipe.pipe';
 import { ChildProductsComponent } from '../products/child-products/child-products.component';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +17,9 @@ import { ChildProductsComponent } from '../products/child-products/child-product
     ProductsComponent,
     ProductComponent,
     NotfoundComponent,
-   ChildProductsComponent
+    PipePipe
+    ChildProductsComponent
+
   ],
   imports: [
     CommonModule,
@@ -27,7 +32,8 @@ import { ChildProductsComponent } from '../products/child-products/child-product
     HomeComponent,
     ProductsComponent,
     ProductComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    PipePipe
    
   ]
 })
