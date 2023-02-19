@@ -55,25 +55,25 @@ export class ProductComponent {
        }
     },
     {
-      name: "Kotate Mochi",
+      name: "Empire Ficus",
       description:"Tamañano entre 15 y 30 cm. Sencillo de mantener. Estilo bosque frondoso",
       cares: "Espacios abiertos y luminosos, poca agua. Evitar temperaturas extremas.",
       music: "Gregorian",
       price: 29.99,
       image: {
-        src: "./assets/kotate.jpeg",
-        alt: "Kotate Mochi"
+        src: "./assets/empire.jpeg",
+        alt: "Empire"
      }
   },
   {
-    name: "Kotate Mochi",
+    name: "Maple",
     description:"Tamañano entre 15 y 30 cm. Sencillo de mantener. Estilo bosque frondoso",
     cares: "Espacios abiertos y luminosos, poca agua. Evitar temperaturas extremas.",
     music: "Gregorian",
     price: 29.99,
     image: {
-      src: "./assets/kotate.jpeg",
-      alt: "Kotate Mochi"
+      src: "./assets/maple.jpeg",
+      alt: "Maple"
    }
 },
     ]
