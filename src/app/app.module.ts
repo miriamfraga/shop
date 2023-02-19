@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/header/header.component';
 import { MainComponent } from './core/main/main.component';
 import { FooterComponent } from './core/footer/footer.component';
-import { PipePipe } from './pipe/pipe.pipe';
+// import { PipePipe } from './pipe/pipe.pipe';
 
 
 @NgModule({
@@ -18,7 +18,7 @@ import { PipePipe } from './pipe/pipe.pipe';
     HeaderComponent,
     MainComponent,
     FooterComponent,
-    PipePipe
+    // PipePipe
   ],
   imports: [
     BrowserModule,
@@ -27,6 +27,9 @@ import { PipePipe } from './pipe/pipe.pipe';
     SharedModule
   
     
+  ],
+  exports: [
+    // PipePipe
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
