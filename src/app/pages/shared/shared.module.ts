@@ -17,7 +17,7 @@ import { ChildProductsComponent } from '../products/child-products/child-product
     ProductsComponent,
     ProductComponent,
     NotfoundComponent,
-    PipePipe
+    PipePipe,
     ChildProductsComponent
 
   ],
