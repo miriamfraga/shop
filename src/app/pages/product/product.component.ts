@@ -8,11 +8,11 @@ import { Iarray } from 'src/app/models/interface';
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent {
-     bonsaisList: Iarray[] = [];
-     filteredBonsais: Iarray[] = [];
+    //  bonsaisList: Iarray[] = [];
+     filteredBonsais: Iarray[];
      filter: string = ''
      constructor (private productServive:ProductService) {
-           this.filteredBonsais = this.bonsaisList;
+           this.filteredBonsais = this.arrayPlants;
      }
      
     public arrayPlants: Iarray = {
@@ -88,7 +88,7 @@ export class ProductComponent {
     }
 
     onFilterProduct(filter: any){
-      const bonsai: any = this.bonsaisList.filter(pr => pr.info.includes(filter.toLowerCase()));
+      const bonsai: any = this.arrayPlants.filter(pr => pr.info.includes(filter.toLowerCase()));
       this.filteredBonsais = bonsai;
     }
   
