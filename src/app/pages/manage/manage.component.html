@@ -1,39 +1,39 @@
-<h2>Formulario de registración del producto</h2>
+<h2>Add product:</h2>
 
 <form novalidate (ngSubmit)="onSubmit()" [formGroup]="productRegistrationForm"]>
     <fieldset>
-        <label for="">Nombre del producto:</label>
+        <label for="">Product name:</label>
         <input type="text" id="name"> formControlName="name">
     </fieldset>
     <fieldset>
-        <label for="">Precio:</label>
+        <label for="">Price:</label>
         <input type="number" id="price"> formControlName="price">
     </fieldset>
     <fieldset>
-        <label for="">Categoría:</label>
+        <label for="">Category:</label>
         <input type="radio" id="category"> formControlName="category">
     </fieldset>
     <fieldset>
-        <label for="">Cuidado:</label>
-        <input type="number" id="reviews"> formControlName="reviews">
+        <label for="">Care:</label>
+        <input type="number" id="care"> formControlName="care">
     </fieldset>
     <fieldset>
-        <label for="">Música:</label>
-        <input type="" id="reviews"> formControlName="reviews">
+        <label for="">Music:</label>
+        <input type="" id="music"> formControlName="music">
     </fieldset>
     <fieldset>
-        <label for="">Descripción:</label>
+        <label for="">Description:</label>
         <input type="text" id="description"> formControlName="description">
     </fieldset>
     <fieldset>
-        <label for="">Imagen:</label>
+        <label for="">Image:</label>
         <input type="text" id="image"> formControlName="image">
     </fieldset>
     <fieldset>
-        <label for="">Opiniones:</label>
-        <input type="number" id="reviews"> formControlName="reviews">
+        <label for="">Rating:</label>
+        <input type="number" id="rating"> formControlName="rating">
     </fieldset>
     
 
-    <button type="submit" [disabled]="!productRegistrationForm.valid">ENVIAR</button>
+    <button type="submit" [disabled]="!productRegistrationForm.valid">Submit</button>
 </form>

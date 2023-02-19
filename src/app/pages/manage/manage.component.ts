@@ -1,18 +1,8 @@
+import { ProductRegistration } from './../../models/productRegistration';
 import { ProductService } from './../../service/product.service';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
-interface ProductRegistration {
-  
-  name: string,
-  price: number,
-  category: string[],
-  cares: string[],
-  music: string[],
-  description: string,
-  image: string,
-  reviews: number
-}
 
 @Component({
   selector: 'app-manage',
@@ -23,22 +13,26 @@ interface ProductRegistration {
 
 export class ManageComponent {
   public productRegistrationForm!: FormGroup;
+  public submitted: boolean = false;
   FormBuilder: any;
 
-   constructor( private productBuilder: FormBuilder,
-     private productService: ProductService) {
-     
-     this.productRegistrationForm = this.FormBuilder.group({
-       name: ['', [Validators.required]],
-       price: ['', [Validators.required]],
-       category: ['', [Validators.required]],
-       description: ['', [Validators.required, Validators.maxLength(100)]],
-       image: ['', [Validators.required]],
-       reviews: ['', [Validators.required, Validators.max(5)]]
-     })
-   }
 
-   onSubmit(){
+  constructor(private productBuilder: FormBuilder,
+    private productService: ProductService) {
+     
+    this.productRegistrationForm = this.FormBuilder.group({
+      name: ['', [Validators.required]],
+      price: ['', [Validators.required]],
+      category: ['', [Validators.required]],
+      care: ['', [Validators.required]],
+      music: ['', [Validators.required]],
+      description: ['', [Validators.required, Validators.maxLength(100)]],
+      image: ['', [Validators.required]],
+      rating: ['', [Validators.required, Validators.max(5)]]
+    })
+  }
+
+  onSubmit() {
     this.submitted = true;
 
     if (this.productRegistrationForm.valid) {
@@ -46,11 +40,12 @@ export class ManageComponent {
         name: this.productRegistrationForm.get('name')?.value,
         price: this.productRegistrationForm.get('price')?.value,
         category: this.productRegistrationForm.get('category')?.value,
-        cares: this.productRegistrationForm.get('cares')?.value,
+        care: this.productRegistrationForm.get('care')?.value,
         music: this.productRegistrationForm.get('music')?.value,
         description: this.productRegistrationForm.get('description')?.value,
         image: this.productRegistrationForm.get('image')?.value,
-        reviews: this.productRegistrationForm.get('reviews')?.value
+        rating: this.productRegistrationForm.get('reviews')?.value,
+      }
     }
-   }
+  }
 }

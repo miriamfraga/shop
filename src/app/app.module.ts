@@ -13,6 +13,9 @@ import { HeaderComponent } from './core/header/header.component';
 import { MainComponent } from './core/main/main.component';
 import { FooterComponent } from './core/footer/footer.component';
 
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +30,8 @@ import { FooterComponent } from './core/footer/footer.component';
     HttpClientModule,
     AppRoutingModule,
     SharedModule,
-    ManageModule
+    ManageModule,
+    ReactiveFormsModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
