@@ -1,3 +1,4 @@
+import { Iarray } from 'src/app/models/interface';
 import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
@@ -11,5 +12,8 @@ export class ProductService {
 
   getProducts(): Observable <Item[]>{
     return this.http.get<Item[]>(backUrl)
+  }
+  postProducts(product: Iarray){
+      return this.http.post(backUrl,product)
   }
 }
