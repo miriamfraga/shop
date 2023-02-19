@@ -2,36 +2,40 @@
 
 <form novalidate (ngSubmit)="onSubmit()" [formGroup]="productRegistrationForm"]>
     <fieldset>
-        <label for="">Product name:</label>
-        <input type="text" id="name"> formControlName="name">
+        <label for="name">Product name:</label>
+        <input type="text" id="name" formControlName="name">
     </fieldset>
     <fieldset>
-        <label for="">Price:</label>
-        <input type="number" id="price"> formControlName="price">
+        <label for="price">Price:</label>
+        <input type="number" id="price" formControlName="price">
     </fieldset>
     <fieldset>
-        <label for="">Category:</label>
-        <input type="radio" id="category"> formControlName="category">
+        <label for="category">Category:</label>
+        <select name="category" id="category">
+            <option *ngFor="let categ of category" [value]="categ">{{categ}}</option>
+          </select>
     </fieldset>
     <fieldset>
-        <label for="">Care:</label>
-        <input type="number" id="care"> formControlName="care">
+        <label for="care">Care:</label>
+        <textarea id="care" rows="3" formControlName="care">
     </fieldset>
     <fieldset>
-        <label for="">Music:</label>
-        <input type="" id="music"> formControlName="music">
+        <label for="music">Music:</label>
+        <select name="music" id="music">
+            <option *ngFor="let musics of music" [value]="musics">{{music}}</option>
+        </select>
     </fieldset>
     <fieldset>
-        <label for="">Description:</label>
-        <input type="text" id="description"> formControlName="description">
+        <label for="description">Description:</label>
+        <textarea id="description" rows="3" formControlName="description">Add a short description</textarea>
     </fieldset>
     <fieldset>
-        <label for="">Image:</label>
-        <input type="text" id="image"> formControlName="image">
+        <label for="image">Image:</label>
+        <input type="text" id="image" formControlName="image">
     </fieldset>
     <fieldset>
-        <label for="">Rating:</label>
-        <input type="number" id="rating"> formControlName="rating">
+        <label for="rating">Rating:</label>
+        <input type="number" id="rating" formControlName="rating">
     </fieldset>
     
 
