@@ -13,7 +13,7 @@ import { HeaderComponent } from './core/header/header.component';
 import { MainComponent } from './core/main/main.component';
 import { FooterComponent } from './core/footer/footer.component';
 
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -31,7 +31,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     SharedModule,
     ManageModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]

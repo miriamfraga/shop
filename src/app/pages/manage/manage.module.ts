@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ManageRoutingModule } from './manage-routing.module';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,6 +11,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     ManageRoutingModule,
     ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class ManageModule { }

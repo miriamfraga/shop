@@ -11,8 +11,10 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 
 export class ManageComponent {
-  public productRegistrationForm: FormGroup;
+  public productRegistrationForm!: FormGroup;
   public submitted: boolean = false;
+  public newProduct = this.productService.productData;
+
   FormBuilder: any;
 
   category = ["Select one", "Plants", "Coffee", "Gardening", "Coffee making"];
@@ -40,21 +42,23 @@ export class ManageComponent {
     "Duet", "Punk Rock", "Drum Solo", "Acapella", "Euro-House", "Dance Hall"];
 
 
-  constructor(private productBuilder: FormBuilder, private productService: ProductService) {
-     
-    this.productRegistrationForm = this.FormBuilder.group({
-      nameForm: ['', [Validators.required]],
-      priceForm: [0, [Validators.required]],
-      categoryForm: ['Select one', [Validators.required]],
-      careForm: ['', [Validators.required]],
-      musicForm: ['Select one', [Validators.required]],
-      descriptionForm: ['', [Validators.required, Validators.maxLength(100)]],
-      imageForm: ['', [Validators.required]],
-      ratingForm: [0, [Validators.required, Validators.max(5)]]
+  constructor(private productBuilder: FormBuilder,private productService: ProductService) {}
+
+  ngOnInit(): void {
+    this.productRegistrationForm = this.productBuilder.group({
+      nameForm: [this.newProduct.name, [Validators.required]],
+      priceForm: [this.newProduct.price, [Validators.required]],
+      categoryForm: [this.newProduct.category, [Validators.required]],
+      careForm: [this.newProduct.care, [Validators.required]],
+      musicForm: [this.newProduct.music, [Validators.required]],
+      descriptionForm: [this.newProduct.description, [Validators.required, Validators.maxLength(100)]],
+      imageForm: [this.newProduct.image, [Validators.required]],
+      ratingForm: [this.newProduct.rating, [Validators.required, Validators.max(5)]]
+  
     })
   }
 
-  onSubmit() {
+  public onSubmit() : void {
     this.submitted = true;
 
     if (this.productRegistrationForm.valid) {
@@ -68,6 +72,10 @@ export class ManageComponent {
         image: this.productRegistrationForm.get('image')?.value,
         rating: this.productRegistrationForm.get('rating')?.value,
       }
+      console.log(newProduct);
+
+      this.productRegistrationForm.reset();
+      this.submitted = false;
     }
   }
 }
