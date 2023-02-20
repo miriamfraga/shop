@@ -1,4 +1,3 @@
-import { Icoffee } from './../../models/coffees';
 import { Component } from '@angular/core';
 
 @Component({
