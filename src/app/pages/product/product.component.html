@@ -1,19 +1,19 @@
 <div class="wrap">
     <!-- <h1>OUR FAVOURITE BONSAIS</h1> -->
-    <!-- <div> -->
-        <!-- <h3 *ngFor="let bonsai of (bonsaisList | pipe: filter)">{{bonsai}}</h3> -->
-        <!-- <input type="text" [(ngModel)]="filter"> -->
-    <!-- </div> -->
     <ul class="div__ul">
         <li *ngFor="let bonsai of arrayPlants.info" class="div__ul__li">
             <img [src]="bonsai.image.src" [alt]="bonsai.image.alt" class="li__img">
             <h1>{{bonsai.name}}: </h1><h2>{{bonsai.description}}</h2>
             <h3>{{bonsai.music}}</h3>
             <p>{{bonsai.cares}}</p>
-            <p>{{bonsai.price}}</p>
-
+            <p>{{bonsai.price | currency}}</p>
             <!-- <h3>{{bonsai.stars}}</h3>   -->
             <!-- <button routerLink="/Products/"{{product.id}}>EDIT</button> -->
     </ul>
 </div>
+<!-- <div> -->
+    <!-- <h2 *ngFor="let bonsai of (arrayPlants| filter: filterBonsai)" class="div__ul__li">{{bonsai}}</h2> -->
+    <!-- <input type="text" [(ngModel)]="filterBonsai"> -->
+<!-- </div> -->
+
 

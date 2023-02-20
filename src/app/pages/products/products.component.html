@@ -4,8 +4,8 @@
     <ul class="div__ul">
         <li *ngFor="let illustration of topProducts.info" class="div__ul__li">
             <img [src]="illustration.image.src" [alt]="illustration.image.alt" class="li__img">
-            <h1>{{illustration.name}}: </h1><h2>{{illustration.description}}</h2>
-            <p>{{illustration.price}}</p>   
+            <h1>{{illustration.name}}: </h1><h2>{{illustration.description | lowercase}}</h2>
+            <p>{{illustration.price | currency}}</p>   
     </ul>
 </div>
 

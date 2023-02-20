@@ -1,4 +1,5 @@
 export interface Iarray {
+ 
     category: string,
     info: Iinfo[]
 }
