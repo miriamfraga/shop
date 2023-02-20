@@ -83,14 +83,8 @@ export class ProductComponent {
       src: "./assets/maple.jpeg",
       alt: "Maple"
    }
-},
+}
     ]
     }
-
-    //  onFilterProduct(filter: any){
-      //  const bonsai: any = this.arrayPlants.filter(pr => pr.info.includes(filter.toLowerCase()));
-      //  this.filteredBonsais = bonsai;
-    //  }
-  
-  
+ 
 }

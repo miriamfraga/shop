@@ -10,7 +10,7 @@ import { Component, Input } from '@angular/core';
 })
 export class ChildProductsComponent {
 
- @Input () productList: Item[] =[];
+@Input () productList: Item[] =[];
 @Input() Shop: Icoffee = {category: '', types:[{name: '', description: '', image:'', price: 0}]}
  constructor (private productService:ProductService) {}
 }

@@ -1,7 +1,6 @@
 import { ProductService } from './../../service/product.service';
 import { Component } from '@angular/core';
 import { Item } from 'src/app/models/models';
-import { Iarray } from 'src/app/models/interface';
 import { Icoffee } from 'src/app/models/coffees';
 
 @Component({
@@ -11,94 +10,62 @@ import { Icoffee } from 'src/app/models/coffees';
 })
 export class ProductsComponent {
   productList: Item[] = [];
-  filteredList: any;
-  filter!: string;
+  
+  
 
   constructor(private ProductService: ProductService) {}
-   public topProducts: Iarray = {
+   public illustrations: Icoffee = {
    
     category: "illustrations",
-    info: [
+    types: [
     {
    name: "Illustration Japanese",
    description: "Illustation from ",
-   cares: "Ejbndh",
-   music: "Sjbndh",
+   image: "./assets/japanese.webp",
    price: 39.99,
-   image: {
-        src: "./assets/japanese.webp",
-        alt: "illustation"
-     }},
+       },
      {
-   name: "Ficus Ginseng Kokedama",
+   name: "Bonsai Illustration",
    description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
-   cares: "Estancia luminosa, sol indirecto, evitar fuentes de aire directas, requiere poca agu",
-   music: "Soul/Jazz",
    price: 39.99,
-   image: {
-         src: "./assets/japanese1.jpeg",
-         alt: "kokedama"
-      }},
+   image: "./assets/japanese1.jpeg",
+      },
       {
-   name: "Ficus Ginseng Kokedama",
+   name: "Japanese Art",
    description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
-   cares: "Estancia luminosa, sol indirecto, evitar fuentes de aire directas, requiere poca agu",
-   music: "Soul/Jazz",
+   image:  "./assets/japanese2.jpeg",  
    price: 39.99,
-   image: {
-           src: "./assets/japanese2.jpeg",
-           alt: "kokedama"
-        }},
+        },
         {
-   name: "Ficus Ginseng Kokedama",
+   name: "Bonsai Japanese Style",
    description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
-   cares: "Estancia luminosa, sol indirecto, evitar fuentes de aire directas, requiere poca agu",
-   music: "Soul/Jazz",
+   image: "./assets/japanese3.jpeg",
    price: 39.99,
-   image: {
-          src: "./assets/japanese3.jpeg",
-          alt: "kokedama"
-       }},
+       },
        {
-   name: "Ficus Ginseng Kokedama",
+   name: "Botanic Illustration",
    description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
-   cares: "Estancia luminosa, sol indirecto, evitar fuentes de aire directas, requiere poca agu",
-   music: "Soul/Jazz",
-   price: 39.99,
-   image: {
-          src: "./assets/japanese4.jpeg",
-          alt: "kokedama"
-       }},
+   image: "./assets/japanese4.jpeg",
+   price: 39.99,  
+       },
      {
-   name: "Ficus Ginseng Kokedama",
+   name: "Random Bonsai Art",
    description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
-   cares: "Estancia luminosa, sol indirecto, evitar fuentes de aire directas, requiere poca agu",
-   music: "Soul/Jazz",
+   image:"./assets/japanese5.jpeg",
    price: 39.99,
-   image: {
-          src: "./assets/japanese5.jpeg",
-          alt: "kokedama"
-       }},
+       },
        {
-   name: "Ficus Ginseng Kokedama",
+   name: "Japanese Tree",
    description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
-   cares: "Estancia luminosa, sol indirecto, evitar fuentes de aire directas, requiere poca agu",
-   music: "Soul/Jazz",
+   image: "./assets/japanese6.jpeg",
    price: 39.99,
-   image: {
-     src: "./assets/japanese6.jpeg",
-     alt: "kokedama"
-    }},
+   },
     {
-   name: "FicKokedama",
+   name: "Illustation Tree Bonsai",
    description: "Una de ticulares raíces aé",
-   cares: "Estancia lumiequiere poca agu",
-   music: "Soul/Jazz",
+   image:  "./assets/japanese7.jpeg",  
    price: 39.99,
-   image: {
-     src: "./assets/japanese7.jpeg",
-     alt: "kokedama"
-   }},
+     },
          
     ]
     }

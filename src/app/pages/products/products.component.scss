@@ -3,16 +3,12 @@
      text-align: center;
 }
 
-
-
-
-
 .div__ul{
     display:flex;
     flex-wrap: wrap;
     gap: 1em;
     list-style: none;   
-   
+  
         
    }
    .div__ul__li{
@@ -21,6 +17,7 @@
         flex-direction: row;
         justify-content: center;
         max-width: 75%;
+      
        
     
    }
