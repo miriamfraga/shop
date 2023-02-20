@@ -1,4 +1,5 @@
-import { HomeModule } from './../home/home.module';
+import { ProductsComponent } from './../products/products.component';
+
 import { ProductComponent } from './../product/product.component';
 import { NotfoundComponent } from './../notfound/notfound.component';
 import { ManageComponent } from './../manage/manage.component';
@@ -9,7 +10,6 @@ import { CommonModule } from '@angular/common';
 import { SharedRoutingModule } from './shared-routing.module';
 
 import { PipePipe } from 'src/app/pipe/pipe.pipe';
-import { ChildProductsComponent } from '../products/child-products/child-products.component';
 
 
 @NgModule({
@@ -18,7 +18,9 @@ import { ChildProductsComponent } from '../products/child-products/child-product
     ManageComponent,
     NotfoundComponent,
     PipePipe,
-    ChildProductsComponent
+    ProductComponent,
+    ProductsComponent
+   
 
   ],
   imports: [
@@ -34,6 +36,7 @@ import { ChildProductsComponent } from '../products/child-products/child-product
     ProductComponent,
     NotfoundComponent,
     PipePipe
+   
    
   ]
 })
