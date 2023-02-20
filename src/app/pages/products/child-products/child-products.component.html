@@ -6,7 +6,7 @@
             <img [src]="product.image" alt="{{product.name}}" class="li__img">
             <h3>{{product.name}}:</h3>
             <h4>{{product.description}}</h4>
-            <h3>{{product.price}}</h3>
+            <h3>{{product.price | currency}}</h3>
             <h3>{{product.star}}</h3>  
             <button routerLink="/Products{{product.id}}">edite</button>
             <!-- <button routerLink="/Manage/"{{product.id}}>EDITE</button> -->
