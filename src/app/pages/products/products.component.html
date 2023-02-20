@@ -1,13 +1,18 @@
 <h2>Illustration Section</h2>
+<app-child-products [Shop]="illustrations"></app-child-products>
 <div class="wrap">
-  
-    <ul class="div__ul">
-        <li *ngFor="let illustration of topProducts.info" class="div__ul__li">
-            <img [src]="illustration.image.src" [alt]="illustration.image.alt" class="li__img">
-            <h1>{{illustration.name}}: </h1><h2>{{illustration.description | lowercase}}</h2>
-            <p>{{illustration.price | currency}}</p>   
-    </ul>
+    <!-- <ul class="div__ul"> -->
+        <!-- <li *ngFor="let illustration of topProducts.types" class="div__ul__li"> -->
+            <!-- <img [src]="illustration.image" [alt]="illustration.name" class="li__img"> -->
+            <!-- <h1>{{illustration.name}}: </h1><h2>{{illustration.description | lowercase}}</h2> -->
+            <!-- <p>{{illustration.price | currency}}</p>    -->
+    <!-- </ul> -->
 </div>
+<app-child-products [Shop]="arrayCoffees"></app-child-products>
+<app-child-products [Shop]="arrayTeas"></app-child-products>
 
 <app-child-products [productList]="productList"></app-child-products>
+
+
+
 

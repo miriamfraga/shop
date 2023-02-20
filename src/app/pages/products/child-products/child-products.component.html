@@ -1,4 +1,3 @@
-<p>componente hijo</p>
 <div class="wrap">
     <!-- <h1>PRODUCT LIST</h1> -->
     <ul class="div__ul">
@@ -8,7 +7,16 @@
             <h4>{{product.description}}</h4>
             <h3>{{product.price | currency}}</h3>
             <h3>{{product.star}}</h3>  
-            <button routerLink="/Products{{product.id}}">edite</button>
+            <button routerLink="/Manage/{{product.id}}">edite</button>
             <!-- <button routerLink="/Manage/"{{product.id}}>EDITE</button> -->
     </ul>
+    <section class="container">
+        <ul class="section__ul">
+             <li *ngFor="let products of Shop.types" class="section__ul__li">
+                <img src="{{products.image}}" alt="{{products.name}}" class="img__li">
+                <h3>{{products.name}}: {{products.description}}</h3>
+                <h3>{{products.price}}</h3>
+        </ul>
+    </section>
 </div>
+

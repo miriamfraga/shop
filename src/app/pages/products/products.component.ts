@@ -1,7 +1,7 @@
 import { ProductService } from './../../service/product.service';
 import { Component } from '@angular/core';
 import { Item } from 'src/app/models/models';
-import { Iarray } from 'src/app/models/interface';
+import { Icoffee } from 'src/app/models/coffees';
 
 @Component({
   selector: 'app-products',
@@ -10,98 +10,124 @@ import { Iarray } from 'src/app/models/interface';
 })
 export class ProductsComponent {
   productList: Item[] = [];
-  filteredList: any;
-  filter!: string;
+  
+  
 
   constructor(private ProductService: ProductService) {}
-   public topProducts: Iarray = {
+   public illustrations: Icoffee = {
    
     category: "illustrations",
-    info: [
+    types: [
     {
-     name: "Illustration Japanese",
-     description: "Illustation from ",
-     cares: "Ejbndh",
-     music: "Sjbndh",
-     price: 39.99,
-     image: {
-        src: "./assets/japanese.webp",
-        alt: "illustation"
-     }},
+   name: "Illustration Japanese",
+   description: "Illustation from ",
+   image: "./assets/japanese.webp",
+   price: 39.99,
+       },
      {
-      name: "Ficus Ginseng Kokedama",
-      description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
-      cares: "Estancia luminosa, sol indirecto, evitar fuentes de aire directas, requiere poca agu",
-      music: "Soul/Jazz",
-      price: 39.99,
-      image: {
-         src: "./assets/japanese1.jpeg",
-         alt: "kokedama"
-      }},
+   name: "Bonsai Illustration",
+   description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
+   price: 39.99,
+   image: "./assets/japanese1.jpeg",
+      },
       {
-        name: "Ficus Ginseng Kokedama",
-        description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
-        cares: "Estancia luminosa, sol indirecto, evitar fuentes de aire directas, requiere poca agu",
-        music: "Soul/Jazz",
-        price: 39.99,
-        image: {
-           src: "./assets/japanese2.jpeg",
-           alt: "kokedama"
-        }},
+   name: "Japanese Art",
+   description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
+   image:  "./assets/japanese2.jpeg",  
+   price: 39.99,
+        },
         {
-       name: "Ficus Ginseng Kokedama",
-       description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
-       cares: "Estancia luminosa, sol indirecto, evitar fuentes de aire directas, requiere poca agu",
-       music: "Soul/Jazz",
-       price: 39.99,
-       image: {
-          src: "./assets/japanese3.jpeg",
-          alt: "kokedama"
-       }},
+   name: "Bonsai Japanese Style",
+   description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
+   image: "./assets/japanese3.jpeg",
+   price: 39.99,
+       },
        {
-       name: "Ficus Ginseng Kokedama",
-       description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
-       cares: "Estancia luminosa, sol indirecto, evitar fuentes de aire directas, requiere poca agu",
-       music: "Soul/Jazz",
-       price: 39.99,
-       image: {
-          src: "./assets/japanese4.jpeg",
-          alt: "kokedama"
-       }},
+   name: "Botanic Illustration",
+   description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
+   image: "./assets/japanese4.jpeg",
+   price: 39.99,  
+       },
      {
-       name: "Ficus Ginseng Kokedama",
-       description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
-       cares: "Estancia luminosa, sol indirecto, evitar fuentes de aire directas, requiere poca agu",
-       music: "Soul/Jazz",
-       price: 39.99,
-       image: {
-          src: "./assets/japanese5.jpeg",
-          alt: "kokedama"
-       }},
+   name: "Random Bonsai Art",
+   description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
+   image:"./assets/japanese5.jpeg",
+   price: 39.99,
+       },
        {
-        name: "Ficus Ginseng Kokedama",
-        description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
-        cares: "Estancia luminosa, sol indirecto, evitar fuentes de aire directas, requiere poca agu",
-        music: "Soul/Jazz",
-        price: 39.99,
-        image: {
-           src: "./assets/japanese6.jpeg",
-           alt: "kokedama"
-        }},
-        {
-         name: "FicKokedama",
-         description: "Una de ticulares raíces aé",
-         cares: "Estancia lumiequiere poca agu",
-         music: "Soul/Jazz",
-         price: 39.99,
-         image: {
-            src: "./assets/japanese7.jpeg",
-            alt: "kokedama"
-         }},
+   name: "Japanese Tree",
+   description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
+   image: "./assets/japanese6.jpeg",
+   price: 39.99,
+   },
+    {
+   name: "Illustation Tree Bonsai",
+   description: "Una de ticulares raíces aé",
+   image:  "./assets/japanese7.jpeg",  
+   price: 39.99,
+     },
          
     ]
     }
-  
+    
+    public arrayCoffees: Icoffee = {
+      category: "coffees",
+      types: [
+        {
+          name: "Latte",
+          description: "Spanish style",
+          image: "./assets/latte.jpeg",
+          price: 6
+        },
+        {
+          name: "Colombian Coffee",
+          description: "Best ever coffee",
+          image: "./assets/colombian.jpeg",
+          price: 6
+        },
+        {
+          name: "Soy Milk",
+          description: "Go Vegan",
+          image: "./assets/soy.jpeg",
+          price: 6
+        },
+        {
+          name: "Black Coffee",
+          description: "Hard Style",
+          image: "./assets/espresso.jpeg",
+          price: 6
+        }
+      ]
+    }
+    public arrayTeas: Icoffee = {
+      category: "teas",
+      types: [
+        {
+          name: "Matcha",
+          description: "Elegant, healthy",
+          image: "./assets/matcha.jpeg",
+          price: 6
+        },
+        {
+          name: "Arab Tea",
+          description: "Best ever coffee",
+          image: "./assets/arab.jpeg",
+          price: 8
+        },
+        {
+          name: "Green Tea",
+          description: "Delicious",
+          image: "./assets/green.jpeg",
+          price: 9
+        },
+        {
+          name: "Breakfast",
+          description: "Vintage Mood",
+          image: "./assets/breakfasttea.jpeg",
+          price: 6
+        }
+      ]
+    }
   
 
   ngOnInit(){
