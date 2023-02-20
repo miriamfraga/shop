@@ -3,41 +3,41 @@
 <form novalidate (ngSubmit)="onSubmit()" [formGroup]="productRegistrationForm">
     <fieldset>
         <label for="name">Product name:</label>
-        <input type="text" id="name" formControlName="nameForm">
+        <input type="text" id="nameForm" formControlName="nameForm">
     </fieldset>
     <fieldset>
         <label for="price">Price:</label>
-        <input type="number" id="price" formControlName="priceForm">
+        <input type="number" id="priceForm" formControlName="priceForm">
     </fieldset>
     <fieldset>
-        <label for="music">Music:</label>
-        <select name="music" id="music" formControlName="musicForm">
-            <option *ngFor="let categ of music" [value]="categ">{{categ}}</option>
-        </select>
+        <label for="categoryForm">Category:</label>
+        <div class="radio" *ngFor="let categ of form.category" for="categoryForm">
+            <input type="radio" [value]="form.category" name="categoryForm" id="categoryForm" formControlName="categoryForm">
+            <label>{{categ}}</label>
+        </div>    
     </fieldset>
     <fieldset>
         <label for="care">Care:</label>
-        <textarea id="care" rows="3" formControlName="careForm">
+        <textarea id="careForm" rows="3" formControlName="careForm">
     </fieldset>
     <fieldset>
-        <label for="category">Category</label>
-        <input *ngFor="let music of category" [value]="music" type="radio" name="category" id="category" formControlName="categoryForm">
-            <!-- <option *ngFor="let music of category" value="music">{{music}}</option> -->
-        </select>
+        <!-- <label for="musicForm">Music:</label> -->
+        <!-- <select name="musicForm" id="musicForm" formControlName="musicForm">
+            <option *ngFor="let musik of form.music" [value]="musik"></option>
+        </select> -->
     </fieldset>
     <fieldset>
         <label for="description">Description:</label>
-        <textarea id="description" rows="3" formControlName="description">Add a short description</textarea>
+        <textarea id="descriptionForm" rows="3" formControlName="description">Add a short description</textarea>
     </fieldset>
     <fieldset>
         <label for="image">Image:</label>
-        <input type="text" id="image" formControlName="imageForm">
+        <input type="text" id="imageForm" formControlName="imageForm">
     </fieldset>
     <fieldset>
         <label for="rating">Rating:</label>
-        <input type="number" id="rating" formControlName="ratingForm">
+        <input type="number" id="ratingForm" formControlName="ratingForm">
     </fieldset>
-    
 
-    <button type="submit" [disabled]="!productRegistrationForm.valid">Submit</button>
+    <button type="submit" [disabled]="productRegistrationForm.valid">Submit</button>
 </form>
