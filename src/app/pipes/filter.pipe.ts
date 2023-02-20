@@ -8,8 +8,10 @@ export class FilterPipe implements PipeTransform {
 
   transform(list: any, filterBonsai: string = '') {
     const lowerCaseFilter: string = filterBonsai.toLowerCase().trim();
-    const filteredBonsais: any = list.filter((bonsai:string)=>{
-      return bonsai.toLowerCase().includes(lowerCaseFilter)
+    const filteredBonsais: any = list.filter((bo:string)=>{
+      console.log(bo);
+      return bo.toLowerCase().includes(lowerCaseFilter)
+  
     });
     return filteredBonsais;
   }
