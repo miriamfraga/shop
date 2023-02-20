@@ -22,10 +22,6 @@ import { PipesModule } from './pipes/pipes.module';
     HeaderComponent,
     MainComponent,
     FooterComponent,
-   
-
-
-    FooterComponent
   ],
   imports: [
     BrowserModule,
