@@ -1,3 +1,4 @@
+import { Icoffee } from './../../models/coffees';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent {
+         
 
 }

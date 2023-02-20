@@ -1,3 +1,4 @@
+import { Icoffee } from './../../../models/coffees';
 import { ProductService } from './../../../service/product.service';
 import { Item } from './../../../models/models';
 import { Component, Input } from '@angular/core';
@@ -10,5 +11,6 @@ import { Component, Input } from '@angular/core';
 export class ChildProductsComponent {
 
  @Input () productList: Item[] =[];
+@Input() Shop: Icoffee = {category: '', types:[{name: '', description: '', image:'', price: 0}]}
  constructor (private productService:ProductService) {}
 }

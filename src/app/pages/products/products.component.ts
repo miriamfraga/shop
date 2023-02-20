@@ -2,6 +2,7 @@ import { ProductService } from './../../service/product.service';
 import { Component } from '@angular/core';
 import { Item } from 'src/app/models/models';
 import { Iarray } from 'src/app/models/interface';
+import { Icoffee } from 'src/app/models/coffees';
 
 @Component({
   selector: 'app-products',
@@ -101,7 +102,65 @@ export class ProductsComponent {
          
     ]
     }
-  
+    
+    public arrayCoffees: Icoffee = {
+      category: "coffees",
+      types: [
+        {
+          name: "Latte",
+          description: "Best ever coffee",
+          image: "./assets/latte.jpeg",
+          price: 6
+        },
+        {
+          name: "Colombian Coffee",
+          description: "Best ever coffee",
+          image: "./assets/colombian.jpeg",
+          price: 6
+        },
+        {
+          name: "Soy Milk",
+          description: "Best ever coffee",
+          image: "./assets/soy.jpeg",
+          price: 6
+        },
+        {
+          name: "Black Coffee",
+          description: "Best ever coffee",
+          image: "./assets/espresso.jpeg",
+          price: 6
+        }
+      ]
+    }
+    public arrayTeas: Icoffee = {
+      category: "teas",
+      types: [
+        {
+          name: "Matcha",
+          description: "Elegant, healthy",
+          image: "./assets/matcha.jpeg",
+          price: 6
+        },
+        {
+          name: "Arab Tea",
+          description: "Best ever coffee",
+          image: "./assets/arab.jpeg",
+          price: 8
+        },
+        {
+          name: "Green Tea",
+          description: "Best ever coffee",
+          image: "./assets/green.jpeg",
+          price: 9
+        },
+        {
+          name: "Breakfast",
+          description: "Best ever coffee",
+          image: "./assets/breakfasttea.jpeg",
+          price: 6
+        }
+      ]
+    }
   
 
   ngOnInit(){
