@@ -12,7 +12,7 @@
     </ul>
 </div>
 <div>
-    <h2 *ngFor="let bonsai of (arrayPlants.info | filter)" class="div__ul__li">{{bonsai}}</h2>
+    <h2 *ngFor="let bonsai of (arrayPlants| filter: filterBonsai)" class="div__ul__li">{{bonsai}}</h2>
     <input type="text" [(ngModel)]="filterBonsai">
 </div>
 

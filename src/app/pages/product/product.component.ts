@@ -8,9 +8,9 @@ import { Iarray } from 'src/app/models/interface';
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent {
-    //  bonsaisList: Iarray[] = [];
-     filteredBonsais: Iarray;
-     filterBonsai: string = ''
+    
+     filteredBonsais: any;
+     filterBonsai: string = '';
      constructor (private productServive:ProductService) {
            this.filteredBonsais = this.arrayPlants;
      }
