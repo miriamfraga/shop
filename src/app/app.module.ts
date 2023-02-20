@@ -1,4 +1,3 @@
-// import { PipePipe } from 'src/app/pipe/pipe.pipe';
 import { ManageModule } from './pages/manage/manage.module';
 
 import { SharedModule } from './pages/shared/shared.module';
@@ -38,7 +37,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
   ],
   exports: [
-    //  PipePipe
+    
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
