@@ -7,15 +7,19 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
-  declarations: [ManageComponent],
+  declarations: [
+    ManageComponent
+  ],
+
   imports: [
     CommonModule,
-    ManageRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    ManageRoutingModule,
+    
   ], 
   exports: [
-    ManageComponent
+    //  ManageComponent
   ]
 })
 export class ManageModule { }

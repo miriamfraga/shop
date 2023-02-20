@@ -11,14 +11,14 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 
 export class ManageComponent {
-productRegistrationForm!: FormGroup;
+  productRegistrationForm!: FormGroup;
   public submitted: boolean = false;
   public newProduct = this.productService.productData;
 
 
 
    public category = ["Select one", "Plants", "Coffee", "Gardening", "Coffee making"];
-  public music= ["Select one", "Blues", "Classic Rock", "Country", "Dance", "Disco",
+    public music= ["Select one", "Blues", "Classic Rock", "Country", "Dance", "Disco",
    "Funk", "Grunge", "Hip-Hop", "Jazz", "Metal", "New Age", "Oldies", "Other",
    "Pop", "R&B", "Rap", "Reggae", "Rock", "Techno", "Industrial",
     "Alternative", "Ska", "Death Metal", "Pranks", "Soundtrack", "Euro-Techno",
@@ -73,7 +73,7 @@ productRegistrationForm!: FormGroup;
       }
       console.log(newProduct);
 
-      this.productRegistrationForm.reset();
+      // this.productRegistrationForm.reset();
       this.submitted = false;
     }
   }
