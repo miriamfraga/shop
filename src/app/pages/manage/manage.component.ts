@@ -18,7 +18,7 @@ export class ManageComponent {
 
 
    public category = ["Select one", "Plants", "Coffee", "Gardening", "Coffee making"];
-    public music= ["Select one", "Blues", "Classic Rock", "Country", "Dance", "Disco",
+  public music= ["Select one", "Blues", "Classic Rock", "Country", "Dance", "Disco",
    "Funk", "Grunge", "Hip-Hop", "Jazz", "Metal", "New Age", "Oldies", "Other",
    "Pop", "R&B", "Rap", "Reggae", "Rock", "Techno", "Industrial",
     "Alternative", "Ska", "Death Metal", "Pranks", "Soundtrack", "Euro-Techno",

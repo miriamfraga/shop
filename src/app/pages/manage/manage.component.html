@@ -13,11 +13,17 @@
         <label for="music">Music:</label>
         <select name="music" id="music" formControlName="musicForm">
             <option *ngFor="let categ of music" [value]="categ">{{categ}}</option>
-          </select>
+        </select>
     </fieldset>
     <fieldset>
         <label for="care">Care:</label>
         <textarea id="care" rows="3" formControlName="careForm">
+    </fieldset>
+    <fieldset>
+        <label for="category">Category</label>
+        <input *ngFor="let music of category" [value]="music" type="radio" name="category" id="category" formControlName="categoryForm">
+            <!-- <option *ngFor="let music of category" value="music">{{music}}</option> -->
+        </select>
     </fieldset>
     <fieldset>
         <label for="description">Description:</label>
