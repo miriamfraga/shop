@@ -1,9 +1,6 @@
 
 import { ChildProductsComponent } from './../products/child-products/child-products.component';
 import { ProductsComponent } from './../products/products.component';
-
-import { ProductsComponent } from './../products/products.component';
-
 import { ProductComponent } from './../product/product.component';
 import { NotfoundComponent } from './../notfound/notfound.component';
 import { HomeComponent } from './../home/home.component';
@@ -13,16 +10,13 @@ import { SharedRoutingModule } from './shared-routing.module';
 
 
 
-import { PipePipe } from 'src/app/pipe/pipe.pipe';
-
 
 
 @NgModule({
   declarations: [
     HomeComponent,
     NotfoundComponent,
-    ChildProductsComponent
-    PipePipe,
+    ChildProductsComponent,
     ProductComponent,
     ProductsComponent
    
@@ -41,7 +35,6 @@ import { PipePipe } from 'src/app/pipe/pipe.pipe';
     ProductsComponent,
     ProductComponent,
     NotfoundComponent,
-    PipePipe
    
   ]
 })
