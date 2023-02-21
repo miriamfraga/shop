@@ -1,5 +1,4 @@
 import { ProductRegistration } from './../models/productRegistration';
-import { Iarray } from 'src/app/models/interface';
 import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
@@ -18,12 +17,11 @@ export class ProductService {
   public productData = {
     id: 0,
     name: "",
-    price: "",
+    price: 0,
     care: "",
     music: "",
     description: "",
     image: "",
-    rating: "",
   }
 
   getProduct(id: number){
@@ -32,8 +30,8 @@ export class ProductService {
   getProducts(): Observable <Item[]>{
     return this.http.get<Item[]>(this.backUrl)
   }
-  postProducts(product: ProductRegistration){
-      return this.http.post(this.backBonsais,product)
+  postBonsai(product:ProductRegistration){
+    return this.http.post(this.backBonsais,product)
   }
   getBonsais() {
     return this.http.get(this.backBonsais)

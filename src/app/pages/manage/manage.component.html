@@ -6,34 +6,30 @@
     
     <form novalidate (ngSubmit)="onSubmit()" [formGroup]="productRegistrationForm">
         <fieldset>
-            <label for="nameForm">Name:</label>
-            <input class="field" type="text" id="nameForm" formControlName="nameForm">
+            <label for="name">Name:</label>
+            <input class="field" type="text" id="nameForm" formControlName="name">
         </fieldset>
         <fieldset>
-            <label for="priceForm">Price:</label>
-            <input class="field" type="number" id="priceForm" formControlName="priceForm">
+            <label for="price">Price:</label>
+            <input class="field" type="number" id="priceForm" formControlName="price">
         </fieldset>
         <fieldset>
-            <label for="careForm">Care:</label>
-            <textarea class="field field--textarea" id="careForm" rows="3" formControlName="careForm"></textarea>
+            <label for="care">Care:</label>
+            <textarea class="field field--textarea" id="careForm" rows="3" formControlName="care"></textarea>
         </fieldset>
         <fieldset>
-            <label for="musicForm">Music genre:</label>
-            <select class="field" name="musicForm" id="musicForm" formControlName="musicForm">
+            <label for="music">Music genre:</label>
+            <select class="field" name="musicForm" id="musicForm" formControlName="music">
                 <option *ngFor="let one of music" [value]="one">{{one}}</option>
             </select>
         </fieldset>
         <fieldset>
-            <label for="descriptionForm">Description:</label>
-            <textarea class="field field--textarea" id="descriptionForm" rows="5" formControlName="descriptionForm"></textarea>
+            <label for="description">Description:</label>
+            <textarea class="field field--textarea" id="descriptionForm" rows="5" formControlName="description"></textarea>
         </fieldset>
         <fieldset>
-            <label for="imageForm">Image:</label>
-            <input class="field" type="text" id="imageForm" formControlName="imageForm">
-        </fieldset>
-        <fieldset>
-            <label for="ratingForm">Rating:</label>
-            <input class="field" type="number" id="ratingForm" formControlName="ratingForm">
+            <label for="image">Image:</label>
+            <input class="field" type="text" id="imageForm" formControlName="image">
         </fieldset>
 
         <button class="button form__button--submit" type="submit" [disabled]="!productRegistrationForm.valid">Submit</button>

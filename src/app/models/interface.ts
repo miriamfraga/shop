@@ -10,9 +10,5 @@ export interface Iinfo {
     cares: string,
     music: string,
     price: number,
-    image: Iimage
-}
-export interface Iimage {
-    src: string,
-    alt: string
+    image: string
 }

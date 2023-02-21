@@ -30,14 +30,12 @@ export class ManageComponent {
  
   ngOnInit(): void {
     this.productRegistrationForm = this.productBuilder.group({
-      nameForm: [this.newProduct.name, [Validators.required]],
-      priceForm: [this.newProduct.price, [Validators.required]],
-      careForm: [this.newProduct.care, [Validators.required]],
-      musicForm: [this.newProduct.music, [Validators.required]],
-      descriptionForm: [this.newProduct.description, [Validators.required, Validators.maxLength(100)]],
-      imageForm: [this.newProduct.image, [Validators.required]],
-      ratingForm: [this.newProduct.rating, [Validators.required, Validators.max(5)]]
-  
+      name: [this.newProduct.name, [Validators.required]],
+      price: [this.newProduct.price, [Validators.required]],
+      care: [this.newProduct.care, [Validators.required]],
+      music: [this.newProduct.music, [Validators.required]],
+      description: [this.newProduct.description, [Validators.required, Validators.maxLength(100)]],
+      image: [this.newProduct.image, [Validators.required]],
     });
     this.productRegistrationForm.valueChanges.subscribe((changes) => {
       this.newProduct = changes;
@@ -56,18 +54,16 @@ export class ManageComponent {
       music: this.productRegistrationForm.get('music')?.value,
       description: this.productRegistrationForm.get('description')?.value,
       image: this.productRegistrationForm.get('image')?.value,
-      rating: this.productRegistrationForm.get('rating')?.value,
     }
-    this.productService.postProducts(newProduct).subscribe((data: any) => {
-      
+    this.productService.postBonsai(this.newProduct).subscribe((data: any) => {
+      console.log(this.newProduct);
     })
-    console.log(newProduct);
 
-    // this.productRegistrationForm.reset();
-    // this.submitted = false;
+    this.productRegistrationForm.reset();
+    this.submitted = false;
+  
   }
-    
   
     
-  
 }
+

@@ -7,6 +7,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { DetailComponent } from './pages/detail/detail.component';
+
 const routes: Routes = [
        {path: "", loadChildren: ()=>
        import("./pages/shared/shared.module").then(m=>m.SharedModule)},
@@ -14,9 +15,7 @@ const routes: Routes = [
        import("./pages/manage/manage.module").then(me=>me.ManageModule)},
       // {path: "Manage", component:ManageComponent},
       {path: "Home", component: HomeComponent},
-      // {path: "Bonsais", component: ProductComponent},
       {path: "Gallery", component: MainComponent},
-      // {path: "Bonsais/:id", component: DetailComponent},
       {path: "Products", component: ProductsComponent},
       {path: "**", component: NotfoundComponent, pathMatch: 'full' },
 
