@@ -27,7 +27,7 @@ export class ProductService {
   }
 
   getProduct(id: number){
-    return this.http.get(`${backUrl}/${id}`)
+    return this.http.get(`${this.backUrl}/${id}`)
   }
   getProducts(): Observable <Item[]>{
     return this.http.get<Item[]>(this.backUrl)

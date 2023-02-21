@@ -17,15 +17,15 @@ export class DetailComponent {
 
     })
 
-    //     this.productService.getProduct(this.id).subscribe((data:any)=>{
-    //      this.product = data;
-    //     })
-    //   }
-    //  deleteProduct(){
-    //   this.productService.deleteProduct(this.id).subscribe((data:any)=>{
-    //     this.router.navigate(["/"]);
-    //   })
-    //  }
+        this.productService.getBonsai(this.id).subscribe((data:any)=>{
+         this.product = data;
+        })
+      }
+     deleteBonsai(){
+      this.productService.deleteBonsai(this.id).subscribe((data:any)=>{
+        this.router.navigate(["/"]);
+      })
+     }
   
   }
-}
+

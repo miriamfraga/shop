@@ -10,13 +10,14 @@ import { DetailComponent } from './pages/detail/detail.component';
 const routes: Routes = [
        {path: "", loadChildren: ()=>
        import("./pages/shared/shared.module").then(m=>m.SharedModule)},
-       {path: "", loadChildren: ()=>
+      {path: "", loadChildren: ()=>
        import("./pages/manage/manage.module").then(me=>me.ManageModule)},
       // {path: "Manage", component:ManageComponent},
       {path: "Home", component: HomeComponent},
-      {path: "Bonsais", component: ProductComponent},
+      // {path: "Bonsais", component: ProductComponent},
       {path: "Gallery", component: MainComponent},
-      // {path: "Products/id:", component: DetailComponent},
+      // {path: "Bonsais/:id", component: DetailComponent},
+      {path: "Products", component: ProductsComponent},
       {path: "**", component: NotfoundComponent, pathMatch: 'full' },
 
 ];
