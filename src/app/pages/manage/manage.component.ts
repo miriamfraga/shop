@@ -14,6 +14,7 @@ export class ManageComponent {
   productRegistrationForm!: FormGroup;
   public submitted: boolean = false;
   public newProduct = this.productService.productData;
+  public productId = this.productService.productData.id;
 
   formBuilder!: ProductRegistration;
 
@@ -45,7 +46,8 @@ export class ManageComponent {
     this.submitted = true;
 
     if (this.productRegistrationForm.valid) {}
-      const newProduct: ProductRegistration = {
+    const newProduct: ProductRegistration = {
+      id: this.productRegistrationForm.get('id')?.value,
         name: this.productRegistrationForm.get('name')?.value,
         price: this.productRegistrationForm.get('price')?.value,
         care: this.productRegistrationForm.get('care')?.value,
@@ -54,6 +56,9 @@ export class ManageComponent {
         image: this.productRegistrationForm.get('image')?.value,
         rating: this.productRegistrationForm.get('rating')?.value,
       }
+    this.productService.postProducts(newProduct).subscribe((data: any) => {
+      
+    })
       console.log(newProduct);
 
       // this.productRegistrationForm.reset();

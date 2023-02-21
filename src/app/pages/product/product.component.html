@@ -1,14 +1,14 @@
 <div class="wrap">
     
     <ul class="div__ul">
-        <li *ngFor="let bonsai of arrayPlants.info" class="div__ul__li">
+        <li *ngFor="let bonsai of bonsaisList" class="div__ul__li">
             <img [src]="bonsai.image.src" [alt]="bonsai.image.alt" class="li__img">
             <h1>{{bonsai.name}}: </h1><h2>{{bonsai.description}}</h2>
             <h3>{{bonsai.music}}</h3>
             <p>{{bonsai.cares}}</p>
             <p>{{bonsai.price | currency}}</p>
            
-            <!-- <button routerLink="/Bonsais/{{bonsai.id}}">Info</button> -->
+            <button routerLink="/Bonsais/{{bonsai.id}}">Info</button>
     </ul>
 </div>
 

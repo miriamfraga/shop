@@ -1,5 +1,6 @@
 export interface ProductRegistration {
-  
+
+    id: number;
     name: string;
     price: number;
     care: string;
