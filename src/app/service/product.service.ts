@@ -21,11 +21,16 @@ export class ProductService {
     rating: ""
   }
 
-
+  getProduct(id: number){
+    return this.http.get(`${backUrl}/${id}`)
+  }
   getProducts(): Observable <Item[]>{
     return this.http.get<Item[]>(backUrl)
   }
   postProducts(product: Iarray){
       return this.http.post(backUrl,product)
+  }
+  deleteProduct(id:number){
+    return this.http.delete(`${backUrl}/${id}`)
   }
 }

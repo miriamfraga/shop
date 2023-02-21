@@ -12,6 +12,7 @@ import { HeaderComponent } from './core/header/header.component';
 import { MainComponent } from './core/main/main.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DetailComponent } from './pages/detail/detail.component';
 
 
 
@@ -22,6 +23,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     MainComponent,
     FooterComponent,
+
   ],
   imports: [
     BrowserModule,
