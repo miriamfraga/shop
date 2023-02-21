@@ -14,12 +14,11 @@ export class ProductService {
   public productData = {
     name: "",
     price: "",
-    category: "",
     care: "",
     music: "",
     description: "",
     image: "",
-    rating: "",
+    rating: ""
   }
 
 

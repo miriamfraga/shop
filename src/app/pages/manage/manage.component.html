@@ -1,43 +1,42 @@
-<h2>Add product:</h2>
+<div class="wrapper">
+    <div class="title">
+        <h2>Add new bonsai:</h2>
+        <p>Please make sure to fill all the required fields before uploading your bonsai.</p>
+    </div>
+    
+    <form novalidate (ngSubmit)="onSubmit()" [formGroup]="productRegistrationForm">
+        <fieldset>
+            <label for="nameForm">Name:</label>
+            <input class="field" type="text" id="nameForm" formControlName="nameForm">
+        </fieldset>
+        <fieldset>
+            <label for="priceForm">Price:</label>
+            <input class="field" type="number" id="priceForm" formControlName="priceForm">
+        </fieldset>
+        <fieldset>
+            <label for="careForm">Care:</label>
+            <textarea class="field" id="careForm" rows="3" formControlName="careForm"></textarea>
+        </fieldset>
+        <fieldset>
+            <label for="musicForm">Music genre:</label>
+            <select class="field" name="musicForm" id="musicForm" formControlName="musicForm">
+                <option *ngFor="let one of music" [value]="one">{{one}}</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label for="descriptionForm">Description:</label>
+            <textarea class="field" id="descriptionForm" rows="5" formControlName="descriptionForm"></textarea>
+        </fieldset>
+        <fieldset>
+            <label for="imageForm">Image:</label>
+            <input class="field" type="text" id="imageForm" formControlName="imageForm">
+        </fieldset>
+        <fieldset>
+            <label for="ratingForm">Rating:</label>
+            <input class="field" type="number" id="ratingForm" formControlName="ratingForm">
+        </fieldset>
 
-<form novalidate (ngSubmit)="onSubmit()" [formGroup]="productRegistrationForm">
-    <fieldset>
-        <label for="name">Product name:</label>
-        <input type="text" id="nameForm" formControlName="nameForm">
-    </fieldset>
-    <fieldset>
-        <label for="price">Price:</label>
-        <input type="number" id="priceForm" formControlName="priceForm">
-    </fieldset>
-    <fieldset>
-        <label for="categoryForm">Category:</label>
-        <div class="radio" *ngFor="let categ of form.category" for="categoryForm">
-            <input type="radio" [value]="form.category" name="categoryForm" id="categoryForm" formControlName="categoryForm">
-            <label>{{categ}}</label>
-        </div>    
-    </fieldset>
-    <fieldset>
-        <label for="care">Care:</label>
-        <textarea id="careForm" rows="3" formControlName="careForm">
-    </fieldset>
-    <fieldset>
-        <!-- <label for="musicForm">Music:</label> -->
-        <!-- <select name="musicForm" id="musicForm" formControlName="musicForm">
-            <option *ngFor="let musik of form.music" [value]="musik"></option>
-        </select> -->
-    </fieldset>
-    <fieldset>
-        <label for="description">Description:</label>
-        <textarea id="descriptionForm" rows="3" formControlName="description">Add a short description</textarea>
-    </fieldset>
-    <fieldset>
-        <label for="image">Image:</label>
-        <input type="text" id="imageForm" formControlName="imageForm">
-    </fieldset>
-    <fieldset>
-        <label for="rating">Rating:</label>
-        <input type="number" id="ratingForm" formControlName="ratingForm">
-    </fieldset>
+        <button class="button form__button--submit" type="submit" [disabled]="!productRegistrationForm.valid">Submit</button>
 
-    <button type="submit" [disabled]="productRegistrationForm.valid">Submit</button>
-</form>
+    </form>
+</div>
