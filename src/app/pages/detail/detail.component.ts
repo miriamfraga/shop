@@ -11,21 +11,21 @@ export class DetailComponent {
  id!: number;
  product: any;
  constructor(private productService:ProductService, private activatedRoute:ActivatedRoute, private router:Router){}
-    ngOnInit(): void{
-      this.activatedRoute.paramMap.subscribe(paramId=>{
-        this.id = Number(paramId.get("id"));
+  ngOnInit(): void {
+    this.activatedRoute.paramMap.subscribe(paramId => {
+      this.id = Number(paramId.get("id"));
 
-      })
-
-      this.productService.getProduct(this.id).subscribe((data:any)=>{
-       this.product = data;
-      })
-    }
-   deleteProduct(){
-    this.productService.deleteProduct(this.id).subscribe((data:any)=>{
-      this.router.navigate(["/"]);
     })
-   }
+
+    //     this.productService.getProduct(this.id).subscribe((data:any)=>{
+    //      this.product = data;
+    //     })
+    //   }
+    //  deleteProduct(){
+    //   this.productService.deleteProduct(this.id).subscribe((data:any)=>{
+    //     this.router.navigate(["/"]);
+    //   })
+    //  }
   
-  
+  }
 }
