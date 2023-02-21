@@ -12,7 +12,7 @@ import { HeaderComponent } from './core/header/header.component';
 import { MainComponent } from './core/main/main.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { PipesModule } from './pipes/pipes.module';
+
 
 
 
@@ -32,7 +32,7 @@ import { PipesModule } from './pipes/pipes.module';
     ReactiveFormsModule,
     FormsModule,
     SharedModule,
-    PipesModule 
+  
 
   ],
   exports: [

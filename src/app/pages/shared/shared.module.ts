@@ -1,6 +1,6 @@
 import { FormsModule } from '@angular/forms';
-import { PipesModule } from './../../pipes/pipes.module';
-import { FilterPipe } from './../../pipes/filter.pipe';
+
+
 
 import { ChildProductsComponent } from './../products/child-products/child-products.component';
 import { ProductsComponent } from './../products/products.component';
@@ -29,7 +29,7 @@ import { SharedRoutingModule } from './shared-routing.module';
   imports: [
     CommonModule,
     SharedRoutingModule,
-    PipesModule,
+
     FormsModule
    
   
