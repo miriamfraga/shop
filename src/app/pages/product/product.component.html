@@ -1,6 +1,4 @@
-<div class="wrap">
-    
-    <!-- <input type="text" #filter (input)="filterBonsais(filter.value)">
+ <!-- <input type="text" #filter (input)="filterBonsais(filter.value)">
     <div class="filter">
         <div *ngFor="let bonsai of filteredBonsai">
             <img [src]="bonsai.image.src" [alt]="bonsai.image.alt" class="li__img">
@@ -9,20 +7,20 @@
             <p>{{bonsai.cares}}</p>
             <p>{{bonsai.price | currency}}</p>
             <button routerLink="/Bonsais/{{bonsai.id}}">Info</button>
-
-        </div> -->
-
-<div>
-    <ul class="div__ul">
-        <li *ngFor="let bonsai of bonsaisList" class="div__ul__li">
-            <img [src]="bonsai.image" [alt]="bonsai.image.alt" class="li__img">
-            <h1>{{bonsai.name}}: </h1><h2>{{bonsai.description}}</h2>
-            <h3>{{bonsai.music}}</h3>
-            <p>{{bonsai.cares}}</p>
-            <p>{{bonsai.price | currency}}</p>
-        <button routerLink="/Bonsais/{{bonsai.id}}">Info</button>
-
-    </ul>
+        -->
+<div class="wrapper">
+    <div class="card">
+        <ul *ngFor="let bonsai of bonsaisList" class="div__ul">
+            <li class="div__ul__li">
+                <img [src]="bonsai.image" [alt]="bonsai.image.alt" class="li__img">
+                <h1>{{bonsai.name}}: </h1><h2>{{bonsai.description}}</h2>
+                <h3>{{bonsai.music}}</h3>
+                <p>{{bonsai.cares}}</p>
+                <p>{{bonsai.price | currency}}</p>
+            <button routerLink="/Bonsais/{{bonsai.id}}">Info</button>
+        </ul>
+    </div>
+    
 </div>
 
 
