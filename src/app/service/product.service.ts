@@ -1,3 +1,4 @@
+import { ProductRegistration } from './../models/productRegistration';
 import { Iarray } from 'src/app/models/interface';
 import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
@@ -26,7 +27,7 @@ export class ProductService {
   getProducts(): Observable <Item[]>{
     return this.http.get<Item[]>(backUrl)
   }
-  postProducts(product: Iarray){
+  postProducts(product: ProductRegistration){
       return this.http.post(backUrl,product)
   }
 }
