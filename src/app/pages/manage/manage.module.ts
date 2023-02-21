@@ -1,4 +1,5 @@
 import { ManageComponent } from './manage.component';
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -20,7 +21,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     
   ], 
   exports: [
-    //  ManageComponent
+      ManageComponent
   ]
 })
 export class ManageModule { }
