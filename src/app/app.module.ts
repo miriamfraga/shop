@@ -22,6 +22,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     MainComponent,
     FooterComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -31,8 +32,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ManageModule,
     ReactiveFormsModule,
     FormsModule,
-    SharedModule
- 
+    SharedModule,
 
   ],
   exports: [

@@ -1,3 +1,4 @@
+import { DetailComponent } from './../detail/detail.component';
 import { FormsModule } from '@angular/forms';
 
 
@@ -21,7 +22,8 @@ import { SharedRoutingModule } from './shared-routing.module';
     NotfoundComponent,
     ChildProductsComponent,
     ProductComponent,
-    ProductsComponent
+    ProductsComponent,
+    DetailComponent
    
 
 
@@ -38,7 +40,8 @@ import { SharedRoutingModule } from './shared-routing.module';
     ProductsComponent,
     ProductComponent,
     NotfoundComponent,
-    ChildProductsComponent
+    ChildProductsComponent,
+    DetailComponent
    
   ]
 })

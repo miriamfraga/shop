@@ -4,6 +4,7 @@ export interface Iarray {
     info: Iinfo[]
 }
 export interface Iinfo {
+    id: number,
     name: string,
     description: string,
     cares: string,
