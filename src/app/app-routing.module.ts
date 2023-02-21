@@ -8,9 +8,9 @@ import { HomeComponent } from './pages/home/home.component';
 const routes: Routes = [
        {path: "", loadChildren: ()=>
        import("./pages/shared/shared.module").then(m=>m.SharedModule)},
-      //  {path: "", loadChildren: ()=>
-      //  import("./pages/manage/manage.module").then(me=>me.ManageModule)},
-      {path: "Manage", component:ManageComponent},
+       {path: "", loadChildren: ()=>
+       import("./pages/manage/manage.module").then(me=>me.ManageModule)},
+      // {path: "Manage", component:ManageComponent},
       {path: "Home", component: HomeComponent},
       {path: "Bonsais", component: ProductComponent},
       {path: "Gallery", component: MainComponent},
