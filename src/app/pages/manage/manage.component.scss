@@ -6,6 +6,7 @@
     max-width: 50%;
     margin: 0 auto;
     .title {
+        margin: 2em 1em;
         h2 {}
         p {}
     }
@@ -14,10 +15,14 @@
             border: none;
             label {}
             .field {
-                margin-top: 1em;
+                height: 2em;
+                margin-top: 0.2em;
+                margin-bottom: 0.7em;
                 width: 100%;
             }
-            
+            .field--textarea{
+                height: auto;
+            }
         }
         .button {
             margin: 2em 1em;
@@ -26,4 +31,3 @@
         }
     }
 }
-
