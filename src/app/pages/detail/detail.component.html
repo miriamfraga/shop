@@ -1,0 +1,10 @@
+
+<div>
+    <img [src]="product.image" alt="{{product.name}}">
+    <h2>{{product.name}}</h2>
+    <h3>{{product.description}}</h3>
+    <h3>{{product.price | currency}}</h3>
+    <button routerLink="/">Back</button>
+
+<button (click)="deleteProduct()">Delete</button>
+</div>
