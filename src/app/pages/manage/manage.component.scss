@@ -1,0 +1,29 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-items: center;
+    max-width: 50%;
+    margin: 0 auto;
+    .title {
+        h2 {}
+        p {}
+    }
+    form {  
+        fieldset {
+            border: none;
+            label {}
+            .field {
+                margin-top: 1em;
+                width: 100%;
+            }
+            
+        }
+        .button {
+            margin: 2em 1em;
+            width: 7em;
+            height: 3em;
+        }
+    }
+}
+

@@ -6,9 +6,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProductsComponent } from './pages/products/products.component';
 
 const routes: Routes = [
-  {path: "home", component: HomeComponent},
-  {path: "Products", component: ProductsComponent},
-  {path: "Manage", component: ManageComponent},
+  {path: "home", component: HomeComponent, title: "BONSAI • Home"},
+  {path: "Products", component: ProductsComponent, title: "BONSAI • Shop"},
+  {path: "Manage", component: ManageComponent, title: "BONSAI • Manage"},
   {path: "**", component: NotfoundComponent, pathMatch: 'full' },
 
 ];
