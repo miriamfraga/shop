@@ -65,7 +65,7 @@ export class ProductsComponent {
    description: "Una de ticulares raíces aé",
    image:  "./assets/japanese7.jpeg",  
    price: 39.99,
-     },
+     }
          
     ]
     }

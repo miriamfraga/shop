@@ -1,5 +1,5 @@
 <div class="wrap">
-    <!-- <h1>PRODUCT LIST</h1> -->
+    <h1>PRODUCT LIST</h1>
     <ul class="div__ul">
         <li *ngFor="let product of productList" class="div__ul__li">
             <img [src]="product.image" alt="{{product.name}}" class="li__img">
@@ -10,13 +10,12 @@
             <button routerLink="/Manage/{{product.id}}">edite</button>
             <!-- <button routerLink="/Manage/"{{product.id}}>EDITE</button> -->
     </ul>
-    <section class="container">
-        <ul class="section__ul">
-             <li *ngFor="let products of Shop.types" class="section__ul__li">
-                <img src="{{products.image}}" alt="{{products.name}}" class="img__li">
-                <h3>{{products.name}}: {{products.description}}</h3>
-                <h3>{{products.price}}</h3>
-        </ul>
-    </section>
 </div>
-
+<section class="container">
+    <ul class="section__ul">
+         <li *ngFor="let products of Shop.types" class="section__ul__li">
+            <img src="{{products.image}}" alt="{{products.name}}" class="img__li">
+            <h3>{{products.name}}: {{products.description}}</h3>
+            <h3>{{products.price}}</h3>
+    </ul>
+</section>
