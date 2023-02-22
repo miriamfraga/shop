@@ -35,9 +35,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SharedModule,
 
   ],
-  exports:
+  exports: [
     SharedModule    
   ],
+
   providers: [ProductService],
   bootstrap: [AppComponent]
 })
