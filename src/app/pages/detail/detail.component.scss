@@ -1,0 +1,30 @@
+* {
+    margin: 0 auto;
+    list-style: none;
+}
+.container {
+    background-color: #F7EAD7;
+    border-radius: 0.5em; 
+    width: calc(60% - 1em);
+    margin: 0 auto 3em auto;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    img {
+        width: 50%;
+    }
+    .buttons {
+        display: flex;
+        button {
+            margin: 1em 0.5em;
+            width: 5em;
+            height: 1.5em;
+            background-color: #3c5f7f;
+            color: white;
+            border-radius: 0.3em;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    } 
+} 

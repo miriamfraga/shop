@@ -1,0 +1,23 @@
+* {
+    margin: 0 auto;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    button {
+        display: flex;
+        align-self: center;
+        margin: 1em auto;
+        width: max-content;
+        height: 2em;
+        background-color: #3c5f7f;
+        color: white;
+        border-radius: 0.3em;
+        &:hover {
+            cursor: pointer;
+        }
+    } 
+}
