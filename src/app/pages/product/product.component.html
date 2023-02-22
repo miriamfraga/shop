@@ -13,11 +13,16 @@
         <ul *ngFor="let bonsai of bonsaisList" class="div__ul">
             <li class="div__ul__li">
                 <img [src]="bonsai.image" [alt]="bonsai.image.alt" class="li__img">
-                <h1>{{bonsai.name}}: </h1><h2>{{bonsai.description}}</h2>
-                <h3>{{bonsai.music}}</h3>
-                <p>{{bonsai.cares}}</p>
-                <p>{{bonsai.price | currency}}</p>
-            <button routerLink="/Bonsais/{{bonsai.id}}">Info</button>
+                <div class="li__text">
+                    <h1 class="li__name"><b>{{bonsai.name}}:</b></h1><h3>{{bonsai.description}}</h3>
+                        <p class="li__text li__text--music">{{bonsai.music}}</p>
+                        <p>{{bonsai.cares}}</p>
+                </div>
+                <div class="li__lower">
+                    <p class="li__price"><b>{{bonsai.price | currency}}</b></p>
+                    <button routerLink="/Bonsais/{{bonsai.id}}">Info</button>
+                </div>
+                
         </ul>
     </div>
     

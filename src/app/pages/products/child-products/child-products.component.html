@@ -1,21 +1,26 @@
 <div class="wrap">
     <h1>PRODUCT LIST</h1>
-    <ul class="div__ul">
-        <li *ngFor="let product of productList" class="div__ul__li">
-            <img [src]="product.image" alt="{{product.name}}" class="li__img">
-            <h3>{{product.name}}:</h3>
-            <h4>{{product.description}}</h4>
-            <h3>{{product.price | currency}}</h3>
-            <h3>{{product.star}}</h3>  
-            <button routerLink="/Products/{{product.id}}">Info</button>
-            <!-- <button routerLink="/Manage/"{{product.id}}>EDITE</button> -->
-    </ul>
+    <div class="card">
+        <ul *ngFor="let product of productList" class="div__ul">
+            <li class="div__ul__li">
+                <img [src]="product.image" alt="{{product.name}}" class="li__img">
+                <h3>{{product.name}}:</h3>
+                <h4>{{product.description}}</h4>
+                <h3>{{product.price | currency}}</h3>
+                <h3>{{product.star}}</h3>  
+                <button routerLink="/Products/{{product.id}}">Info</button>
+                <!-- <button routerLink="/Manage/"{{product.id}}>EDITE</button> -->
+        </ul>
+    </div>
+    
 </div>
 <section class="container">
-    <ul class="section__ul">
-         <li *ngFor="let products of Shop.types" class="section__ul__li">
-            <img src="{{products.image}}" alt="{{products.name}}" class="img__li">
-            <h3>{{products.name}}: {{products.description}}</h3>
-            <h3>{{products.price}}</h3>
-    </ul>
+    <div class="card1">
+        <ul *ngFor="let products of Shop.types" class="section__ul">
+            <li class="section__ul__li">
+                <img src="{{products.image}}" alt="{{products.name}}" class="img__li">
+                <h3>{{products.name}}: {{products.description}}</h3>
+                <h3>{{products.price | currency}}</h3>
+        </ul>
+    </div>
 </section>
