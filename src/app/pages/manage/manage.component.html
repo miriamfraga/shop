@@ -1,1 +1,38 @@
-<p>manage works!</p>
+<div class="wrapper">
+    <div class="title">
+        <h1>Add new bonsai:</h1>
+        <h3>Please make sure to fill all the required fields before uploading your bonsai.</h3>
+    </div>
+    
+    <form novalidate (ngSubmit)="onSubmit()" [formGroup]="productRegistrationForm">
+        <fieldset>
+            <label for="name">Name:</label>
+            <input class="field" type="text" id="nameForm" formControlName="name">
+        </fieldset>
+        <fieldset>
+            <label for="price">Price:</label>
+            <input class="field" type="number" id="priceForm" formControlName="price">
+        </fieldset>
+        <fieldset>
+            <label for="care">Care:</label>
+            <textarea class="field field--textarea" id="careForm" rows="3" formControlName="care"></textarea>
+        </fieldset>
+        <fieldset>
+            <label for="music">Music genre:</label>
+            <select class="field" name="musicForm" id="musicForm" formControlName="music">
+                <option *ngFor="let one of music" [value]="one">{{one}}</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label for="description">Description:</label>
+            <textarea class="field field--textarea" id="descriptionForm" rows="5" formControlName="description"></textarea>
+        </fieldset>
+        <fieldset>
+            <label for="image">Image:</label>
+            <input class="field" type="text" id="imageForm" formControlName="image">
+        </fieldset>
+
+        <button class="button form__button--submit" type="submit" [disabled]="!productRegistrationForm.valid">Add</button>
+
+    </form>
+</div>

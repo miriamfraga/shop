@@ -1,0 +1,51 @@
+*{
+    margin: 0 auto;
+    //  width: 90%
+}
+.div__wrapper{
+    display: flex;
+    flex-direction: column;
+    .div__header{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: fit-content;  
+        background-image:url("https://i.gifer.com/8U8u.gif");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-blend-mode: difference;
+        background-size: 100%;        
+        img{
+            width: 15%;
+        }
+        .title__header {
+            font-size: 4em;
+        }
+        }
+    }
+    .nav__header{
+        justify-content:center;
+        display: flex; 
+        width: 100%;
+        button{
+            margin: 2em 1em;
+            width: 7em;
+            height: 2em;
+            border-radius: 0.3em;
+            font-size: 0.9em;
+            background-color: transparent;
+            border-radius: 0.5em;
+            margin: 3%;
+            border: 0.16em solid rgba(255,255,255,0);
+            // box-sizing: border-box;
+            // text-decoration:none;
+            // text-align:center;
+            // text-shadow: 0 0.04em 0.04em rgba(248, 240, 85, 0.35);
+            &:hover{
+                background-color:  #F7EAD7;
+                cursor: pointer;
+           }
+       }
+}
+
