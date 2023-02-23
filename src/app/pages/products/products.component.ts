@@ -20,7 +20,7 @@ export class ProductsComponent {
     types: [
     {
    name: "Illustration Japanese",
-   description: "Illustation from ",
+   description: "fsdrtwetsfstew fffffff ffdsdddtttv  gdfgggeybgdfhyrtyrgdfgr gegrt retgff gft ",
    image: "./assets/japanese.webp",
    price: 39.99,
        },
@@ -62,7 +62,7 @@ export class ProductsComponent {
    },
     {
    name: "Illustation Tree Bonsai",
-   description: "Una de ticulares raíces aé",
+   description: " Una de ticulares raíces aé Una de ticulares raíces aé Una de ticulares raíces ",
    image:  "./assets/japanese7.jpeg",  
    price: 39.99,
      }
