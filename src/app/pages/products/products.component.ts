@@ -64,8 +64,37 @@ export class ProductsComponent {
    name: "Illustation Tree Bonsai",
    description: " Una de ticulares raíces aé Una de ticulares raíces aé Una de ticulares raíces ",
    image:  "./assets/japanese7.jpeg",  
-   price: 89.99,
-     }
+   price: 79.99,
+     },
+        {
+    name: "Illustation Tree Bonsai",
+    description: " Una de ticulares raíces aé Una de ticulares raíces aé Una de ticulares raíces ",
+    image:  "./assets/japanese8.jpeg",  
+    price: 89.99,
+            },
+            {
+     name: "Illustation Tree Bonsai",
+     description: " Una de ticulares raíces aé Una de ticulares raíces aé Una de ticulares raíces ",
+     image:  "./assets/japanese9.jpeg",  
+     price: 119.99,
+          },
+          {
+     name: "Illustation Tree Bonsai",
+     description: " Una de ticulares raíces aé Una de ticulares raíces aé Una de ticulares raíces ",
+     image:  "./assets/japanese12.jpeg",  
+     price: 59.99,
+          },
+        {
+       name: "Illustation Tree Bonsai",
+       description: " Una de ticulares raíces aé Una de ticulares raíces aé Una de ticulares raíces ",
+       image:  "./assets/japanese11.jpeg",  
+       price: 29.99,
+         }
+                            
+                        
+                    
+                
+            
          
     ]
     }
