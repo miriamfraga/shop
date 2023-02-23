@@ -20,21 +20,21 @@ export class ProductsComponent {
     types: [
     {
    name: "Illustration Japanese",
-   description: "fsdrtwetsfstew fffffff ffdsdddtttv  gdfgggeybgdfhyrtyrgdfgr gegrt retgff gft ",
+   description: "Ilustración de la maestra ku Waito. 2013. Tinta sobre papel",
    image: "./assets/japanese.webp",
-   price: 39.99,
+   price: 139.99,
        },
      {
    name: "Bonsai Illustration",
    description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
-   price: 39.99,
+   price: 69.99,
    image: "./assets/japanese1.jpeg",
       },
       {
    name: "Japanese Art",
    description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
    image:  "./assets/japanese2.jpeg",  
-   price: 39.99,
+   price: 29.99,
         },
         {
    name: "Bonsai Japanese Style",
@@ -46,13 +46,13 @@ export class ProductsComponent {
    name: "Botanic Illustration",
    description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
    image: "./assets/japanese4.jpeg",
-   price: 39.99,  
+   price: 41.99,  
        },
      {
    name: "Random Bonsai Art",
    description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
    image:"./assets/japanese5.jpeg",
-   price: 39.99,
+   price: 79.99,
        },
        {
    name: "Japanese Tree",
@@ -64,7 +64,7 @@ export class ProductsComponent {
    name: "Illustation Tree Bonsai",
    description: " Una de ticulares raíces aé Una de ticulares raíces aé Una de ticulares raíces ",
    image:  "./assets/japanese7.jpeg",  
-   price: 39.99,
+   price: 89.99,
      }
          
     ]
