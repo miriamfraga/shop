@@ -1,39 +1,44 @@
 *{
-    margin: 0 auto; 
+   
     list-style: none;
 
 }
 
+
+
 .container {
     display:flex;
+    margin: 0 auto;
+    width: 90%;
+
     .section__ul {
-        display: flex;
-        flex-wrap: wrap;
-         justify-content: center;
+         display: flex;
+         flex-wrap: wrap;
+          justify-content: space-between;
          gap: 1em;
-         overflow-x: hidden;
-         overflow-y: hidden;
-        
+         
+        .div__img{
+            overflow: hidden;
+            height: 200px;
+           
+
+        }
         .section__li {
             background-color: #F7EAD7;
             border-radius: 0.5em;  
             display: flex;
             flex-direction: column;
-            width: calc(15% - 1em);
-            margin: 1% 2%;
-            padding: 1em;
-            justify-content: space-evenly;
-           
-           
-          
+            width: calc(25% - 1em);
+             padding: 1em;
             &:hover {
                 -webkit-transform: scale(1.2);
                 transform: scale(1.1);
                 cursor: pointer;
             }
                 .img__li {
-                     max-height: 200px;
-                     max-width: 100%
+                    padding-bottom: 5%;
+                
+                
                     
                     
                 }

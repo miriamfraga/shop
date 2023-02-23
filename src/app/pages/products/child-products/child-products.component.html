@@ -2,7 +2,10 @@
 <section class="container">
         <ul class="section__ul">
             <li *ngFor="let products of Shop.types" class="section__li">
+        <div class="div__img">
                 <img src="{{products.image}}" alt="{{products.name}}" class="img__li">
+
+        </div>
                 <h3>{{products.name}}: {{products.description}}</h3>
                 <h3><b>{{products.price | currency}}</b></h3>
         </ul>
