@@ -1,6 +1,5 @@
 import { ProductService } from './../../service/product.service';
 import { Component } from '@angular/core';
-import { Iarray } from 'src/app/models/interface';
 
 @Component({
   selector: 'app-product',
