@@ -3,8 +3,8 @@
     {
       "id": 1,
       "name": "Ficus Ginseng Kokedama",
-      "description": "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aéreas hacen que quede perfecto con la kokedama",
-      "cares": "Estancia luminosa, sol indirecto, evitar fuentes de aire directas, requiere poca agua",
+      "description": "One of the most beautiful and elegant plants. Its trunk and its particular aerial roots make it a perfect match for the kokedama.",
+      "cares": "Bright room, indirect sunlight, avoid direct air sources, low water requirement.",
       "music": "Soul/Jazz",
       "price": 39.99,
       "image": "./assets/kokedama.jpeg"
@@ -12,8 +12,8 @@
     {
       "id":2,
       "name": "Juniperus",
-      "description": "Esta especie de bonsái es muy adecuada para diseños de madera muerta y se ve muy bien con lo que te de la gana",
-      "cares": "Exterior, sitio muy luminoso, abono orgánico, pinzar brotes largos para desarrollar nubes frondosas",
+      "description": "This bonsai species is very suitable for deadwood designs and looks great with whatever you like.",
+      "cares": "Outdoors, brightly lit site, organic fertiliser; make sure to pinch out long shoots to develop leafy clouds.",
       "music": "Dodecaphonic",
       "price": 49.99,
       "image": "./assets/junipero.webp"
@@ -21,8 +21,8 @@
     {
       "id": 3,
       "name": "Carmona Microphylla",
-      "description": "Bonsai Carmona, también conocido como 'Árbol escorpión' por la forma de crecimiento de sus ramas, parecida a la figura de un escorpión",
-      "cares": "Interior, temperaturas bajas, iluminación natural, regar con abundancia",
+      "description": "Bonsai Carmona is also known as 'scorpion tree' because of the way its branches grow, resembling the shape of a scorpion.",
+      "cares": "Indoors, low temperatures, natural lighting, abundant watering.",
       "music": "Classic",
       "price": 39.99,
       "image": "./assets/carmona.avif"
@@ -30,27 +30,27 @@
     {
       "id": 4,
       "name": "Kotate Mochi",
-      "description": "Tamañano entre 15 y 30 cm. Sencillo de mantener. Estilo bosque frondoso.",
-      "cares": "Espacios abiertos y luminosos, poca agua. Evitar temperaturas extremas.",
-      "music": "Gregorian",
-      "price": 29.99,
+      "description": "Size between 15 and 30 cm. Lush forest style, reminiscent of the cool tree in Avatar.",
+      "cares": "Definitely needs a lot of water in order to keep alive that nice moss that covers its roots.",
+      "music": "Blues",
+      "price": 19.99,
       "image": "./assets/kotate.jpeg"
     },
     {
       "id": 5,
       "name": "Empire Ficus",
-      "description": "Tamañano entre 15 y 30 cm. Sencillo de mantener. Estilo bosque frondoso",
-      "cares": "Espacios abiertos y luminosos, poca agua. Evitar temperaturas extremas.",
-      "music": "Gregorian",
+      "description": "Easy to maintain. His little leafy style make it looks like it would rather be dead.",
+      "cares": "Do not let his emaciated appearance fool you: his resistance to adversity is truly impressive.",
+      "music": "Instrumental Pop",
       "price": 29.99,
       "image": "./assets/empire.jpeg"
     },
     {
       "id": 6,
       "name": "Maple",
-      "description": "Tamañano entre 15 y 30 cm. Sencillo de mantener. Estilo bosque frondoso",
-      "cares": "Espacios abiertos y luminosos, poca agua. Evitar temperaturas extremas.",
-      "music": "Gregorian",
+      "description": "Its amazing shades of red, orange and yellow make it a perfect choice for anyone who would like to experience fall vibes all year.",
+      "cares": "Does not necessarily need a lot of attention and care, but you will give it to it anyway.",
+      "music": "Celtic",
       "price": 29.99,
       "image": "./assets/maple.jpeg"
     }
