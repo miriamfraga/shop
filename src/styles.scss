@@ -4,3 +4,26 @@ body {
     color: #090605;
     background-color: #fafaeb;
 }
+
+.general__button {
+    color: black;
+    border-radius: 0.3em;
+    border: 0.1em solid #A0C7D2;
+    background-color: transparent;
+    &:hover {
+        font-weight: bold;
+        cursor: pointer;
+        color: white;
+        background-color: #A0C7D2
+        
+    }
+    &--info {
+        width: 5em;
+        height: 2em;    
+    }
+    &--form {
+        margin: 2em 1em;
+        width: 5em;
+        height: 2em;
+    }
+} 
