@@ -21,19 +21,19 @@ export class ProductsComponent {
     {
    name: "Illustration Japanese",
    description: "Ilustración de la maestra ku Waito. 2013. Tinta sobre papel",
-   image: "./assets/japanese.webp",
+   image: "./assets/japanese00.jpeg",
    price: 139.99,
        },
      {
    name: "Bonsai Illustration",
    description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
    price: 69.99,
-   image: "./assets/japanese1.jpeg",
+   image: "./assets/japanese44.jpeg",
       },
       {
    name: "Japanese Art",
    description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
-   image:  "./assets/japanese2.jpeg",  
+   image:  "./assets/japanese0.jpeg",  
    price: 29.99,
         },
         {
@@ -45,13 +45,13 @@ export class ProductsComponent {
        {
    name: "Botanic Illustration",
    description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
-   image: "./assets/japanese4.jpeg",
+   image: "./assets/japanese0000.jpeg",
    price: 41.99,  
        },
      {
    name: "Random Bonsai Art",
    description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
-   image:"./assets/japanese5.jpeg",
+   image:"./assets/japanese55.jpeg",
    price: 79.99,
        },
        {
@@ -63,7 +63,7 @@ export class ProductsComponent {
     {
    name: "Illustation Tree Bonsai",
    description: " Una de ticulares raíces aé Una de ticulares raíces aé Una de ticulares raíces ",
-   image:  "./assets/japanese7.jpeg",  
+   image:  "./assets/japanese1111.jpeg",  
    price: 79.99,
      },
         {
@@ -81,7 +81,7 @@ export class ProductsComponent {
           {
      name: "Illustation Tree Bonsai",
      description: " Una de ticulares raíces aé Una de ticulares raíces aé Una de ticulares raíces ",
-     image:  "./assets/japanese12.jpeg",  
+     image:  "./assets/japanese66.jpeg",  
      price: 59.99,
           },
         {
