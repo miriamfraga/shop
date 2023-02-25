@@ -23,7 +23,7 @@ import { SharedRoutingModule } from './shared-routing.module';
     ChildProductsComponent,
     ProductComponent,
     ProductsComponent,
-    DetailComponent
+    DetailComponent,
    
 
 
@@ -41,7 +41,7 @@ import { SharedRoutingModule } from './shared-routing.module';
     ProductComponent,
     NotfoundComponent,
     ChildProductsComponent,
-    DetailComponent
+    DetailComponent,
    
   ]
 })
