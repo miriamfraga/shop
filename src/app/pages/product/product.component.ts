@@ -12,7 +12,7 @@ export class ProductComponent {
   filteredBonsai: any[] = [];
     
   constructor(private productService: ProductService) { }
-  
+
   filterBonsais(filter: any) {
     this.filteredBonsai = this.bonsaisList.filter((bonsai) => {
       bonsai.name.includes(filter);
