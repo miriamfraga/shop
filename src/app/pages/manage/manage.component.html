@@ -39,17 +39,17 @@
 
 </div>
 
-<div class="preview__bonsai">
-   
-    <img src="{{newProduct.image}}" class="preview__bonsai__img">
-    <h1>{{newProduct.name}}</h1>
-    <h3>{{newProduct.price | currency}}</h3>
-     <h3>{{newProduct.care}}</h3>
-     <h2>{{newProduct.music}}</h2>
-    <h2>{{newProduct.description}}</h2>
-    
-</div>
-
+<!-- <div class="preview__bonsai"> -->
+<!--     -->
+    <!-- <img src="{{newProduct.image}}" class="preview__bonsai__img"> -->
+    <!-- <h1>{{newProduct.name}}</h1> -->
+    <!-- <h3>{{newProduct.price | currency}}</h3> -->
+     <!-- <h3>{{newProduct.care}}</h3> -->
+     <!-- <h2>{{newProduct.music}}</h2> -->
+    <!-- <h2>{{newProduct.description}}</h2> -->
+<!--      -->
+<!-- </div> -->
+<app-detail-bonsai [product]="newProduct"></app-detail-bonsai>
 </div>
 
 
