@@ -1,7 +1,7 @@
 
     <section class="preview__bonsai" *ngIf="product.image.length > 0 else noImage">
         <h2>Preview</h2>
-          <img src="{{product.image}}" class="preview__bonsai__img" >
+          <img src="{{product.image}}" class="preview__bonsai__img" style="width: 75%">
           <h2>{{product.name}}</h2>
           <h3>{{product.price | currency}}</h3>
           <h3>{{product.care}}</h3>
