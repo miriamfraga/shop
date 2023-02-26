@@ -1,21 +1,22 @@
 
 <div class="wrapper">
     <div class="view__buttons">
-        <button class="general__button"><span class="icon-list"></span></button>
-        <button class="general__button"><span class="icon-grid"></span></button>
+        <button (click)="selectList()" class="general__button"><span class="icon-list"></span></button>
+        <button (click)="selectGrid()" class="general__button"><span class="icon-grid"></span></button>
     </div>
-    <div class="card">
-        <ul *ngFor="let bonsai of bonsaisList" class="div__ul">
-            <li class="div__ul__li">
-                <img [src]="bonsai.image" [alt]="bonsai.image.alt" class="li__img">
+    <div class="cards-container" [ngClass]="isGrid ? 'cards-container--grid' : 'cards-container--list'">
+        <ul class="div__ul" *ngFor="let bonsai of bonsaisList">
+            <li class="div__li">
+                <img [src]="bonsai.image" class="li__img">
                 <div class="li__text">
-                    <h1 class="li__name"><b>{{bonsai.name}}:</b></h1><h3>{{bonsai.description}}</h3>
-                        <!-- <h2 class="li__text li__text--music">{{bonsai.music}}</h2> -->
-                        <!-- <h4>Cares: {{bonsai.cares}}</h4> -->
-                </div>
-                <div class="li__lower">
-                    <p class="li__price"><b>{{bonsai.price | currency}}</b></p>
-                    <button class="general__button general__button--info" routerLink="/Bonsais/{{bonsai.id}}">Info</button>
+                    <div class="li__text--upper">
+                        <h1 class="li__name"><b>{{bonsai.name}}:</b></h1>
+                        <h3>{{bonsai.description}}</h3>
+                    </div>
+                    <div class="li__text--lower">
+                        <p class="li__price"><b>{{bonsai.price | currency}}</b></p>
+                        <button class="general__button general__button--info" routerLink="/Bonsais/{{bonsai.id}}">Info</button>
+                    </div>
                 </div>
         </ul>
     </div>

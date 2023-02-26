@@ -10,6 +10,7 @@ export class ProductComponent {
     
   bonsaisList: any[] = [];
   filteredBonsai: any[] = [];
+  isGrid: boolean = false;
     
   constructor(private productService: ProductService) { }
 
@@ -19,6 +20,15 @@ export class ProductComponent {
     })
   }
 
+  public selectGrid = () => {
+    this.isGrid = true;
+    console.log(this.isGrid)
+  }
+
+  public selectList = () => {
+    this.isGrid = false;
+    console.log(this.isGrid)
+  }
   
   
      ngOnInit(): void {
