@@ -11,6 +11,7 @@ export class ProductComponent {
   bonsaisList: any[] = [];
   filteredBonsai: any[] = [];
   isGrid: boolean = false;
+  filterSearch: string = "";
   
     
   constructor(private productService: ProductService) { }

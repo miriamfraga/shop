@@ -5,10 +5,10 @@
             <button (click)="selectList()" class="general__button"><span class="icon-list"></span></button>
             <button (click)="selectGrid()" class="general__button"><span class="icon-grid"></span></button>
         </div>
-        <input class="filter" #filter type="text" placeholder="Search">
+        <input class="filter" #filter type="text" placeholder="Search" [(ngModel)]="filterSearch" autofocus>
     </div>
     <div class="cards-container" [ngClass]="isGrid ? 'cards-container--grid' : 'cards-container--list'">
-        <ul class="div__ul" *ngFor="let bonsai of bonsaisList">
+        <ul class="div__ul" *ngFor="let bonsai of bonsaisList | appFilter: filterSearch">
             <li class="div__li">
                 <img [src]="bonsai.image" class="li__img">
                 <div class="li__text">
