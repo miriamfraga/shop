@@ -2,27 +2,25 @@
     margin: 0 auto;
     list-style: none;
 }
+
 .wrapper {
     display: flex;
     flex-direction: column;
-    width: calc(100% - 1em);
+    width: calc(100%);
     margin: 0 auto 3em auto;
     padding: 3em 0;
     .buttons-filter-container {
         width: 100%;
         display: flex;
         flex-direction: row-reverse;
-        margin: 0 auto;
-        justify-content: center;
-        text-align: right;
-            .filter {
-                border: solid 0.01em #97b8c1;
-                border-radius: 0.5em;  
-                padding: 1%;
-                font-size: 1em;
-                width: 10%;
-            }        
-            .buttons {
+        justify-content: space-between;
+        .filter {
+            border: solid 0.01em #97b8c1;
+            border-radius: 0.5em;  
+            padding: 0.1%;
+            font-size: 1em;
+        }        
+        .buttons {
             display: flex;
             flex-direction: row;
             border: 0.1em solid #A0C7D2;
@@ -30,8 +28,6 @@
             background-color: #F7EAD7;
             button {
                 display: flex;
-                align-items: center;
-                width: max-content;
                 font-size: 1.8em;
                 border: none;
                 border-radius: 0;
@@ -55,7 +51,8 @@
                 border-radius: 0.5em;  
                 display: flex;
                 align-content: space-between;
-                width: calc(80% - 1em);                
+                width: calc(65%);
+                padding-inline-start: 0;                             
                 &:hover {
                     transform: scale(1.1);
                     cursor: pointer;
@@ -72,18 +69,17 @@
                     .li__text { 
                         max-width: 100%;
                         max-height: 20em;
-                        margin: 2em;
+                        margin: 0 2em;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-evenly;
-                        disp
                         .li__text--upper {
                             justify-content: space-between;
-                            margin: 0 1.8em;
                         }
                         .li__text--lower {
-                            display: flex;
-                            flex-direction: column;
+                            display: inline;
+                            width: 100%;
+                            line-height: 2em;
                         }   
                     }    
                 }
