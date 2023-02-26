@@ -1,8 +1,11 @@
 
 <div class="wrapper">
-    <div class="view__buttons">
-        <button (click)="selectList()" class="general__button"><span class="icon-list"></span></button>
-        <button (click)="selectGrid()" class="general__button"><span class="icon-grid"></span></button>
+    <div class="buttons-filter-container">
+        <div class="buttons">
+            <button (click)="selectList()" class="general__button"><span class="icon-list"></span></button>
+            <button (click)="selectGrid()" class="general__button"><span class="icon-grid"></span></button>
+        </div>
+        <input class="filter" #filter type="text" placeholder="Search">
     </div>
     <div class="cards-container" [ngClass]="isGrid ? 'cards-container--grid' : 'cards-container--list'">
         <ul class="div__ul" *ngFor="let bonsai of bonsaisList">

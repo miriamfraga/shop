@@ -3,30 +3,45 @@
     list-style: none;
 }
 .wrapper {
+    display: flex;
+    flex-direction: column;
     width: calc(100% - 1em);
     margin: 0 auto 3em auto;
-    padding: 5em 0;
-    .view__buttons {
+    padding: 3em 0;
+    .buttons-filter-container {
+        width: 100%;
         display: flex;
-        flex-direction: row;
-        border: 0.1em solid #A0C7D2;
-        border-radius: 0.3em;
-        width: min-content;
-        background-color: #F7EAD7;
-        justify-content: right;
-        button {
-            align-items: center;
-            width: max-content;
-            font-size: 1.8em;
-            padding-top: 0.2em;
-            border: none;
-            border-radius: 0;
+        flex-direction: row-reverse;
+        margin: 0 auto;
+        justify-content: center;
+        text-align: right;
+            .filter {
+                border: solid 0.01em #97b8c1;
+                border-radius: 0.5em;  
+                padding: 1%;
+                font-size: 1em;
+                width: 10%;
+            }        
+            .buttons {
+            display: flex;
+            flex-direction: row;
+            border: 0.1em solid #A0C7D2;
+            border-radius: 0.3em;
+            background-color: #F7EAD7;
+            button {
+                display: flex;
+                align-items: center;
+                width: max-content;
+                font-size: 1.8em;
+                border: none;
+                border-radius: 0;
+                padding: 0.3em;
+            }
         }
     }
     .cards-container {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 3%;
         padding: 1%;
         justify-content: center;
         gap: 2em;
