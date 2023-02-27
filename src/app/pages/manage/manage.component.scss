@@ -1,3 +1,10 @@
+.first__wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
 .wrapper {
     border: 0.01em solid #A0C7D2;
     background-color: #F7EAD7;
@@ -11,8 +18,8 @@
     padding: 0 5em;
     .title {
         margin: 2em 1em;
-        h2 {}
-        p {}
+        // h2 {}
+        // p {}
     }
     form {
         fieldset {
@@ -21,17 +28,37 @@
                 font-weight: bold;
             }
             .field {
-                color: white;
+                color: rgb(21, 20, 20);
                 border: solid 0.01em #97b8c1;
                 border-radius: 0.5em;  
                 height: 2em;
                 margin-top: 0.2em;
                 margin-bottom: 0.7em;
                 width: 100%;
+                
+
             }
             .field--textarea{
                 height: auto;
+                
             }
         }
     }
+}
+.preview__bonsai{
+    display:flex;
+    width: 50%;
+    height: 20%;
+    // background-color: rgb(109, 96, 96);
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    
+    
+        &__img{
+        width: 50%;
+        text-decoration: none;
+    }
+
+
 }

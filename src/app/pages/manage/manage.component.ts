@@ -62,7 +62,7 @@ export class ManageComponent {
     })
 
     this.productRegistrationForm.reset();
-    this.submitted = false;
+   this.submitted = false;
   
   }
   

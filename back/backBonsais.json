@@ -10,7 +10,7 @@
       "image": "./assets/kokedama.jpeg"
     },
     {
-      "id":2,
+      "id": 2,
       "name": "Juniperus",
       "description": "This bonsai species is very suitable for deadwood designs and looks great with whatever you like.",
       "cares": "Outdoors, brightly lit site, organic fertiliser; make sure to pinch out long shoots to develop leafy clouds.",
@@ -53,6 +53,42 @@
       "music": "Celtic",
       "price": 29.99,
       "image": "./assets/maple.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "",
+      "price": 0,
+      "care": "",
+      "music": "",
+      "description": "",
+      "image": ""
+    },
+    {
+      "name": null,
+      "price": null,
+      "care": null,
+      "music": null,
+      "description": null,
+      "image": null,
+      "id": 8
+    },
+    {
+      "id": 9,
+      "name": "",
+      "price": 0,
+      "care": "",
+      "music": "",
+      "description": "",
+      "image": ""
+    },
+    {
+      "name": null,
+      "price": null,
+      "care": null,
+      "music": null,
+      "description": null,
+      "image": null,
+      "id": 10
     }
   ]
 }
