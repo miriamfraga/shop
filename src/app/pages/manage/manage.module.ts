@@ -5,12 +5,14 @@ import { CommonModule } from '@angular/common';
 
 import { ManageRoutingModule } from './manage-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DetailBonsaiComponent } from './detail-bonsai/detail-bonsai.component';
 
 
 
 @NgModule({
   declarations: [
-    ManageComponent
+    ManageComponent,
+    DetailBonsaiComponent
   ],
 
   imports: [
