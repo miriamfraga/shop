@@ -1,3 +1,4 @@
+import { FilterPipe } from './../../filter.pipe';
 
 
 import { DetailComponent } from './../detail/detail.component';
@@ -25,6 +26,7 @@ import { SharedRoutingModule } from './shared-routing.module';
     ProductComponent,
     ProductsComponent,
     DetailComponent,
+    FilterPipe
 
    
 
@@ -48,3 +50,4 @@ import { SharedRoutingModule } from './shared-routing.module';
   ]
 })
 export class SharedModule { }
+  

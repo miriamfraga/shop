@@ -52,19 +52,37 @@
                 display: flex;
                 align-content: space-between;
                 width: calc(65%);
-                padding-inline-start: 0;                             
+                padding-inline-start: 0;       
+                overflow: hidden;                     
                 &:hover {
                     transform: scale(1.1);
                     cursor: pointer;
                 }
                 .div__li {
-                    display: flex;
+                    // display: flex;
                     flex-direction: row;
+                    border: 0.01em solid #A0C7D2;
+                    background-color: #F7EAD7;
+                    border-radius: 0.5em;  
+                    display: flex;
+                    
+                    flex-direction: column;
+                    padding: 1em;
                     .li__img{
-                        overflow: hidden;
+                      
+                        padding-bottom: 5%;
                         max-width: 100%;
-                        max-height: 18em;
-                        margin: 2em;
+                        border-radius: 3%;
+                        width: calc(50% - 1em);
+                      
+                      
+                      
+                      
+                        // overflow: hidden;
+                        // max-width: 100%;
+                        // max-height: 18em;
+                        // margin: 2em;
+
                     }
                     .li__text { 
                         max-width: 100%;
