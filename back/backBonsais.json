@@ -53,6 +53,42 @@
       "music": "Gregorian",
       "price": 29.99,
       "image": "./assets/maple.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "",
+      "price": 0,
+      "care": "",
+      "music": "",
+      "description": "",
+      "image": ""
+    },
+    {
+      "name": null,
+      "price": null,
+      "care": null,
+      "music": null,
+      "description": null,
+      "image": null,
+      "id": 8
+    },
+    {
+      "id": 9,
+      "name": "",
+      "price": 0,
+      "care": "",
+      "music": "",
+      "description": "",
+      "image": ""
+    },
+    {
+      "name": null,
+      "price": null,
+      "care": null,
+      "music": null,
+      "description": null,
+      "image": null,
+      "id": 10
     }
   ]
 }
