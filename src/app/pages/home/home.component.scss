@@ -1,0 +1,39 @@
+*{
+    // margin: 0 auto;
+     width: 100%
+}
+.div__wrapper{
+    display: flex;
+    flex-direction: column;
+    .div__header{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 70vh;  
+        background-image:url("https://i.gifer.com/8U8u.gif");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-blend-mode: difference;
+        background-size: 100%;        
+        img {
+            width: 20%;
+            height: auto;
+            overflow: hidden;
+        }
+        .title__header {
+            display: flex;
+            font-size: 10em;
+            overflow: hidden;
+            justify-content: center;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            text-shadow: 0 0 20px #fff;
+
+        }
+        }
+    }
+

@@ -13,6 +13,7 @@ import { MainComponent } from './core/main/main.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AboutComponent } from './pages/about/about.component';
+import { NavComponent } from './core/nav/nav.component';
 
 
 
@@ -24,6 +25,7 @@ import { AboutComponent } from './pages/about/about.component';
     MainComponent,
     FooterComponent,
     AboutComponent,
+    NavComponent,
 
   ],
   imports: [
