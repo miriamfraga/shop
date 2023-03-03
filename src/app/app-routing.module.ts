@@ -1,3 +1,4 @@
+import { AboutComponent } from './pages/about/about.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { MainComponent } from './core/main/main.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
@@ -12,7 +13,8 @@ const routes: Routes = [
        import("./pages/manage/manage.module").then(me=>me.ManageModule)},
       {path: "Home", component: HomeComponent},
       {path: "Gallery", component: MainComponent},
-      {path: "Products", component: ProductsComponent},
+      {path: "Products", component: ProductsComponent },
+      {path: "About", component: AboutComponent},
       {path: "**", component: NotfoundComponent, pathMatch: 'full' },
 
 ];
