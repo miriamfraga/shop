@@ -55,40 +55,31 @@
       "image": "./assets/maple.jpeg"
     },
     {
-      "id": 7,
-      "name": "",
-      "price": 0,
-      "care": "",
-      "music": "",
-      "description": "",
-      "image": ""
+      "name": "hola",
+      "price": 4000,
+      "cares": "jkndskjndas",
+      "music": "Other",
+      "description": "sndkjasndandand",
+      "image": "https://images.unsplash.com/photo-1599598177991-ec67b5c37318?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9uc2FpfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+      "id": 7
     },
     {
-      "name": null,
-      "price": null,
-      "care": null,
-      "music": null,
-      "description": null,
-      "image": null,
+      "name": "Felipe Bonsai",
+      "price": 2000,
+      "care": "NO necesita cuidados",
+      "music": "Jazz+Funk",
+      "description": "blablab",
+      "image": "https://cdn.shopify.com/s/files/1/0013/9506/4905/products/ficus-ginseng-kokedama-721820_1080x.jpg?v=1665712709",
       "id": 8
-    },
+    }
+  ],
+  "illustrations": [
     {
-      "id": 9,
       "name": "",
       "price": 0,
-      "care": "",
-      "music": "",
-      "description": "",
-      "image": ""
-    },
-    {
-      "name": null,
-      "price": null,
-      "care": null,
-      "music": null,
-      "description": null,
-      "image": null,
-      "id": 10
+      "styles": "aleatorio",
+      "author": ""
     }
-  ]
+  ],
+  "users": []
 }
