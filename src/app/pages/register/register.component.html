@@ -1,0 +1,19 @@
+<form >
+   <fieldset>
+     <label for="email"> Email </label>
+     <input [(ngModel)]="email" type="email" placeholder="email" formControlName="email">
+   </fieldset>
+
+   <fieldset>
+     <label for="password"> Password</label>
+     <input  [(ngModel)]="password" type="password" placeholder="password" formControlName="password">
+   </fieldset>
+   <fieldset>
+      <label for="firstname"> Firstname</label>
+      <input [(ngModel)]="firstname" type="text" placeholder="firstname" formControlName="firstname">
+   </fieldset>
+
+   <button (click)="register"></button>
+</form>
+
+
