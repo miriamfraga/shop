@@ -1,6 +1,5 @@
 import { ProductService } from './../../service/product.service';
 import { Component } from '@angular/core';
-import { Iarray } from 'src/app/models/interface';
 
 @Component({
   selector: 'app-product',
@@ -11,16 +10,18 @@ export class ProductComponent {
     
   bonsaisList: any[] = [];
   filteredBonsai: any[] = [];
+  isGrid: boolean = false;
+  filterSearch: string = "";
+  
     
   constructor(private productService: ProductService) { }
-  
-  filterBonsais(filter: any) {
-    this.filteredBonsai = this.bonsaisList.filter((bonsai) => {
-      bonsai.name.includes(filter);
-    })
-  }
 
-  
+  public selectGrid = () => {
+    this.isGrid = true;
+  }
+  public selectList = () => {
+    this.isGrid = false;
+  }
   
      ngOnInit(): void {
       this.productService.getBonsais().subscribe((data:any) => {

@@ -20,52 +20,81 @@ export class ProductsComponent {
     types: [
     {
    name: "Illustration Japanese",
-   description: "Illustation from ",
-   image: "./assets/japanese.webp",
-   price: 39.99,
+   description: "Ilustración de la maestra ku Waito. 2013. Tinta sobre papel",
+   image: "./assets/japanese00.jpeg",
+   price: 139.99,
        },
      {
    name: "Bonsai Illustration",
-   description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
-   price: 39.99,
-   image: "./assets/japanese1.jpeg",
+   description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces",
+   price: 69.99,
+   image: "./assets/japanese44.jpeg",
       },
       {
    name: "Japanese Art",
-   description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
-   image:  "./assets/japanese2.jpeg",  
-   price: 39.99,
+   description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces",
+   image:  "./assets/japanese0.jpeg",  
+   price: 29.99,
         },
         {
    name: "Bonsai Japanese Style",
-   description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
+   description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces",
    image: "./assets/japanese3.jpeg",
    price: 39.99,
        },
        {
    name: "Botanic Illustration",
-   description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
-   image: "./assets/japanese4.jpeg",
-   price: 39.99,  
+   description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces",
+   image: "./assets/japanese0000.jpeg",
+   price: 41.99,  
        },
      {
    name: "Random Bonsai Art",
-   description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
-   image:"./assets/japanese5.jpeg",
-   price: 39.99,
+   description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces",
+   image:"./assets/japanese55.jpeg",
+   price: 79.99,
        },
        {
    name: "Japanese Tree",
-   description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces aé",
+   description: "Una de plantas más bonitas y elegantes. Su tronco y sus particulares raíces",
    image: "./assets/japanese6.jpeg",
    price: 39.99,
    },
     {
    name: "Illustation Tree Bonsai",
-   description: "Una de ticulares raíces aé",
-   image:  "./assets/japanese7.jpeg",  
-   price: 39.99,
-     }
+   description: " Una de ticulares raíces Una de ticulares raíces aé Una de ticulares raíces",
+   image:  "./assets/japanese1111.jpeg",  
+   price: 79.99,
+     },
+        {
+    name: "Illustation Tree Bonsai",
+    description: " Una de ticulares raíces aé Una de ticulares raíces aé Una de ticulares raíces ",
+    image:  "./assets/japanese8.jpeg",  
+    price: 89.99,
+            },
+            {
+     name: "Illustation Tree Bonsai",
+     description: " Una de ticulares raíces aé Una de ticulares raíces aé Una de ticulares raíces ",
+     image:  "./assets/japanese9.jpeg",  
+     price: 119.99,
+          },
+          {
+     name: "Illustation Tree Bonsai",
+     description: " Una de ticulares raíces aé Una de ticulares raíces aé Una de ticulares raíces ",
+     image:  "./assets/japanese66.jpeg",  
+     price: 59.99,
+          },
+        {
+       name: "Illustation Tree Bonsai",
+       description: " Una de ticulares raíces aé Una de ticulares raíces aé Una de ticulares raíces ",
+       image:  "./assets/japanese11.jpeg",  
+       price: 29.99,
+         }
+                            
+                        
+                    
+                
+            
          
     ]
     }

@@ -1,61 +1,39 @@
 *{
-    margin: 0 auto;
+    // margin: 0 auto;
+     width: 100%
 }
-.section__home{
+.div__wrapper{
+    display: flex;
     flex-direction: column;
-    justify-self: center;
-    justify-items: center;
-    max-width: 600%;
-    margin: 0 auto 3em auto;
-    padding: 0 5em;
-    display:flex;
-    flex-direction: column;
-    text-align: justify;
-    .section__div{
+    .div__header{
         display:flex;
+        flex-direction: column;
         align-items: center;
-        flex-direction: column;
-        img {
-            &.animation{
-                width: 40%;
-                animation: animation 3s ease 0s 1 normal backwards;
-                background-color: transparent;
-                @keyframes animation {
-                    0% {
-                        opacity: 0.8;
-                        transform: scale(0.2);
-                    }
-                    80% {
-                        opacity: 0;
-                        transform: scale(0.5);
-                    }
-
-                    50% {
-                        opacity: 0;
-                        transform: scale(1);
-                    }
-                
-                    80% {
-                        opacity: 0;
-                        transform: scale(1.2);
-                    }
-                
-                    100% {
-                        opacity: 0;
-                        transform: scale(2.2);
-                    }
-                }
-            }
-        }
-    }
-    .section__div__content {
-        display: flex;
-        width: 80%;
-        flex-direction: column;
         justify-content: center;
-        gap: 1em;
-        h1 {
-            padding: 2em;
+        width: 100%;
+        height: 70vh;  
+        background-image:url("https://i.gifer.com/8U8u.gif");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-blend-mode: difference;
+        background-size: 100%;        
+        img {
+            width: 20%;
+            height: auto;
+            overflow: hidden;
+        }
+        .title__header {
+            display: flex;
+            font-size: 10em;
+            overflow: hidden;
+            justify-content: center;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            text-shadow: 0 0 20px #fff;
+
+        }
         }
     }
-}
+

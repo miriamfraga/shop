@@ -1,7 +1,8 @@
+<div class="first__wrapper">
 <div class="wrapper">
     <div class="title">
         <h1>Add new bonsai:</h1>
-        <h3>Please make sure to fill all the required fields before uploading your bonsai.</h3>
+        <h3>{{subtitle}}</h3>
     </div>
     
     <form novalidate (ngSubmit)="onSubmit()" [formGroup]="productRegistrationForm">
@@ -11,7 +12,7 @@
         </fieldset>
         <fieldset>
             <label for="price">Price:</label>
-            <input class="field" type="number" id="priceForm" formControlName="price">
+            <input class="field" type="number" id="priceForm" formControlName="price" >
         </fieldset>
         <fieldset>
             <label for="care">Care:</label>
@@ -29,10 +30,19 @@
         </fieldset>
         <fieldset>
             <label for="image">Image:</label>
-            <input class="field" type="text" id="imageForm" formControlName="image">
+            <input class="field"  id="imageForm" formControlName="image" placeholder="Insert an image">
         </fieldset>
 
-        <button class="button form__button--submit" type="submit" [disabled]="!productRegistrationForm.valid">Add</button>
+        <button class="general__button general__button--form" type="submit" [disabled]="!productRegistrationForm.valid">Add</button>
 
     </form>
+
 </div>
+
+<app-detail-bonsai [product]="newProduct"></app-detail-bonsai>
+</div>
+
+
+
+
+

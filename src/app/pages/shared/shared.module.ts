@@ -1,3 +1,5 @@
+import { FilterPipe } from './../../filter.pipe';
+
 
 import { DetailComponent } from './../detail/detail.component';
 import { FormsModule } from '@angular/forms';
@@ -23,7 +25,9 @@ import { SharedRoutingModule } from './shared-routing.module';
     ChildProductsComponent,
     ProductComponent,
     ProductsComponent,
-    DetailComponent
+    DetailComponent,
+    FilterPipe
+
    
 
 
@@ -41,8 +45,9 @@ import { SharedRoutingModule } from './shared-routing.module';
     ProductComponent,
     NotfoundComponent,
     ChildProductsComponent,
-    DetailComponent
+    DetailComponent,
    
   ]
 })
 export class SharedModule { }
+  
