@@ -8,14 +8,9 @@ import { ProductComponent } from './../product/product.component';
 import { NotfoundComponent } from './../notfound/notfound.component';
 import { HomeComponent } from './../home/home.component';
 
-import { HomeComponent } from './../home/home.component';
-import { ProductComponent } from './../product/product.component';
-import { NotfoundComponent } from './../notfound/notfound.component';
-
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedRoutingModule } from './shared-routing.module';
-import { HomeComponent } from './../pages/home.component';
 
 
 

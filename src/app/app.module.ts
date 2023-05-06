@@ -36,6 +36,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
   ],
   exports:
+    [
     SharedModule    
   ],
   providers: [ProductService],
