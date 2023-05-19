@@ -9,8 +9,8 @@ import { Item } from '../models/models';
 export class ProductService {
 
   backUrl: string = "https://my-json-server.typicode.com/franlindebl/shopeame-api-v2/products";
-  backBonsais: string = "https://back-bonsai.vercel.app/bonsais"
-
+  // backBonsais: string = "https://back-bonsai.vercel.app/bonsais"
+ backBonsais: string = 'http://localhost:3000/bonsais';
 
   constructor(private http: HttpClient) { }
 
