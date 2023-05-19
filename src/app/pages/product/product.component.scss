@@ -89,10 +89,11 @@
                         flex-direction: column;
                         justify-content: space-evenly;
                         .li__text--upper {
+                            display:flex;
                             justify-content: space-between;
                         }
                         .li__text--lower {
-                            display: inline;
+                            display: flex;
                             width: 100%;
                             line-height: 2em;
                         }   
@@ -107,13 +108,13 @@
                 border: 0.01em solid #A0C7D2;
                 background-color: #F7EAD7;
                 border-radius: 0.5em;  
-                display: flex;
+                // display: flex;
                 flex-wrap: wrap;
-                width: calc(19% - 1em);
+                width: calc(25% - 1em);
                 margin: 1% 3%;
                 padding: 1em;
                 &:hover {
-                    transform: scale(1.1);
+                    transform: scale(1);
                     cursor: pointer;
                 }
                 .div__li {
