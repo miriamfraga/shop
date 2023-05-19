@@ -53,7 +53,9 @@
                  background-color: #F7EAD7;
                  border-radius: 0.5em;  
                  display: flex;
-                 width: calc(65%);
+                 width: 550px;
+                 height: 700px;
+                 object-fit: cover;
                 &:hover {
                     transform: scale(1.1);
                     cursor: pointer;
