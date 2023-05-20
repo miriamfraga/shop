@@ -10,7 +10,7 @@
     <div class="cards-container" [ngClass]="isGrid ? 'cards-container--grid' : 'cards-container--list'">
         <ul class="div__ul" *ngFor="let bonsai of bonsaisList | appFilter: filterSearch">
             <li class="div__li">
-                <img [src]="bonsai.image" class="li__img">
+                <img [src]="bonsai.image" class="li__img" alt="">
                 <div class="li__text">
                     <div class="li__text--upper">
                         <h1 class="li__name"><b>{{bonsai.name}}:</b></h1>

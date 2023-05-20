@@ -1,7 +1,14 @@
 .first__wrapper{
     display:flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding-top: 1em;
     align-items: center;
+    gap: 2em;
+    align-items: center;
+    // background-color: pink;
+    padding-left: 100px;
     
 }
 
@@ -18,7 +25,9 @@
     padding: 0 5em;
     .title {
         margin: 2em 1em;
-        // h2 {}
+         h2 {
+            // padding: 4px;
+         }
         // p {}
     }
     form {

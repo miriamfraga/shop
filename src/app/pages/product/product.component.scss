@@ -7,9 +7,7 @@
 
 .wrapper {
     display: flex;
-    // background-color: pink;
     flex-direction: column;
-    // width: calc(100%);
     .buttons-filter-container {
         width: 100%;
         display: flex;
@@ -56,8 +54,9 @@
                  width: 550px;
                  height: 700px;
                  object-fit: cover;
+                 margin-bottom: 20px;
                 &:hover {
-                    transform: scale(1.1);
+                    // transform: scale(1);
                     cursor: pointer;
                 }
                 .div__li {
@@ -74,22 +73,33 @@
                     .li__img{
                         object-fit:cover;
                         padding-bottom: 5%;
+
                         max-width: 300px;
                         height: 500px;
                         border-radius: 5%
+
+                       
+                        &:hover {
+                             transform: scale(1.1);
+                        }
+
+
                     
                     
 
                     }
                     .li__text { 
                         // max-width: 100%;
+
+
+                        padding: 10px;
+
                         max-height: 20em;
                         margin: 0 2em;
                         display: flex;
-                        flex-direction: column;
+                         flex-direction: column;
                         justify-content: space-evenly;
                         .li__text--upper {
-                            display:flex;
                             justify-content: space-between;
                         }
                         .li__text--lower {
@@ -108,7 +118,7 @@
                 border: 0.01em solid #A0C7D2;
                 background-color: #F7EAD7;
                 border-radius: 0.5em;  
-                // display: flex;
+                
                 flex-wrap: wrap;
                 width: calc(25% - 1em);
                 margin: 1% 3%;
@@ -121,8 +131,7 @@
                     position: relative;
                     display: flex;
                     flex-direction: column;
-                    // margin-top: 2%;
-                    // justify-content: space-between;
+                   
                     .li__img{
                         overflow: hidden;
                         max-width: 100%;
